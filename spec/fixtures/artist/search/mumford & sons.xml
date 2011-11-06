@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+<results for="mumford " xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">
+<opensearch:Query role="request" searchTerms="mumford " startPage="1" />
+<opensearch:totalResults>176</opensearch:totalResults>
+<opensearch:startIndex>0</opensearch:startIndex>
+<opensearch:itemsPerPage>30</opensearch:itemsPerPage><artistmatches>
+<artist>
+    <name>Mumford &amp; Sons</name>
+                <listeners>616176</listeners>
+        <mbid>c44e9c22-ef82-4a77-9bcd-af6c958446d6</mbid>
+                    <url>http://www.last.fm/music/Mumford%2B%2526%2BSons</url>
+    <streamable>1</streamable>
+            <image size="small">http://userserve-ak.last.fm/serve/34/61469885.png</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/61469885.png</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/61469885.png</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/61469885.png</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/500/61469885/Mumford++Sons+PNG.png</image>
+    </artist><artist>
+    <name>Mumford &amp; Sons, Laura Marling &amp; Dharohar Project</name>
+                <listeners>4506</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Mumford%2B%2526%2BSons%252C%2BLaura%2BMarling%2B%2526%2BDharohar%2BProject</url>
+    <streamable>0</streamable>
+            <image size="small">http://userserve-ak.last.fm/serve/34/50097523.jpg</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/50097523.jpg</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/50097523.jpg</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/50097523.jpg</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/_/50097523/Mumford++Sons+Laura+Marling++Dharohar+Project+la1.jpg</image>
+    </artist><artist>
+    <name>The Dharohar Project &amp; Mumford &amp; Sons</name>
+                <listeners>1702</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/The%2BDharohar%2BProject%2B%2526%2BMumford%2B%2526%2BSons</url>
+    <streamable>0</streamable>
+            <image size="small">http://userserve-ak.last.fm/serve/34/48806951.jpg</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/48806951.jpg</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/48806951.jpg</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/48806951.jpg</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/_/48806951/The+Dharohar+Project++Mumford++Sons+LauraMarlingTheDharoharProject.jpg</image>
+    </artist><artist>
+    <name>Quincy Mumford</name>
+                <listeners>502</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Quincy+Mumford</url>
+    <streamable>0</streamable>
+            <image size="small">http://userserve-ak.last.fm/serve/34/33729093.jpg</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/33729093.jpg</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/33729093.jpg</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/33729093.jpg</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/500/33729093/Quincy+Mumford+Stone+Pony+Summer+Stage.jpg</image>
+    </artist><artist>
+    <name>Dharohar Project, Laura Marling &amp; Mumford &amp; Sons</name>
+                <listeners>507</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Dharohar%2BProject%252C%2BLaura%2BMarling%2B%2526%2BMumford%2B%2526%2BSons</url>
+    <streamable>0</streamable>
+            <image size="small">http://userserve-ak.last.fm/serve/34/49662787.jpg</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/49662787.jpg</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/49662787.jpg</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/49662787.jpg</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/_/49662787/Dharohar+Project+Laura+Marling++Mumford++Sons+dharohar.jpg</image>
+    </artist><artist>
+    <name>Marcus Mumford</name>
+                <listeners>374</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Marcus+Mumford</url>
+    <streamable>0</streamable>
+            <image size="small">http://userserve-ak.last.fm/serve/34/4686127.jpg</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/4686127.jpg</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/4686127.jpg</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/4686127.jpg</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/_/4686127/Marcus+Mumford+Picture+13.jpg</image>
+    </artist><artist>
+    <name>Laura Marling;The Dharohar Project;Mumford &amp; Sons</name>
+                <listeners>486</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Laura%2BMarling%253BThe%2BDharohar%2BProject%253BMumford%2B%2526%2BSons</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>The Dharohar Project;Mumford &amp; Sons</name>
+                <listeners>449</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/The%2BDharohar%2BProject%253BMumford%2B%2526%2BSons</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>The Dharohar Project;Laura Marling;Mumford &amp; Sons</name>
+                <listeners>469</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/The%2BDharohar%2BProject%253BLaura%2BMarling%253BMumford%2B%2526%2BSons</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>Mumford's</name>
+                <listeners>83</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Mumford%27s</url>
+    <streamable>1</streamable>
+            <image size="small">http://userserve-ak.last.fm/serve/34/63808803.jpg</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/63808803.jpg</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/63808803.jpg</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/63808803.jpg</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/500/63808803/Mumfords++Triple+Trinities+Cove.jpg</image>
+    </artist><artist>
+    <name>Laura Marling / The Dharohar Project / Mumford &amp; Sons</name>
+                <listeners>294</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Laura%2BMarling%2B%252F%2BThe%2BDharohar%2BProject%2B%252F%2BMumford%2B%2526%2BSons</url>
+    <streamable>0</streamable>
+            <image size="small">http://userserve-ak.last.fm/serve/34/56294785.jpg</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/56294785.jpg</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/56294785.jpg</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/56294785.jpg</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/500/56294785/Laura+Marling++The+Dharohar+Project++Mumford++Sons+folder.jpg</image>
+    </artist><artist>
+    <name>The Dharohar Project / Mumford &amp; Sons / Laura Marling</name>
+                <listeners>285</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/The%2BDharohar%2BProject%2B%252F%2BMumford%2B%2526%2BSons%2B%252F%2BLaura%2BMarling</url>
+    <streamable>0</streamable>
+            <image size="small">http://userserve-ak.last.fm/serve/34/56294549.jpg</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/56294549.jpg</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/56294549.jpg</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/56294549.jpg</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/500/56294549/The+Dharohar+Project++Mumford++Sons++Laura+Marling+folder.jpg</image>
+    </artist><artist>
+    <name>Gene Mumford</name>
+                <listeners>165</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Gene+Mumford</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>mumford sons</name>
+                <listeners>141</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/mumford+sons</url>
+    <streamable>0</streamable>
+            <image size="small">http://userserve-ak.last.fm/serve/34/61876491.png</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/61876491.png</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/61876491.png</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/61876491.png</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/_/61876491/mumford+sons+mistag.png</image>
+    </artist><artist>
+    <name>Mumford &amp; Sons / The Dharohar Project</name>
+                <listeners>208</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Mumford%2B%2526%2BSons%2B%252F%2BThe%2BDharohar%2BProject</url>
+    <streamable>0</streamable>
+            <image size="small">http://userserve-ak.last.fm/serve/34/56295151.jpg</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/56295151.jpg</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/56295151.jpg</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/56295151.jpg</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/500/56295151/Mumford++Sons++The+Dharohar+Project+folder.jpg</image>
+    </artist><artist>
+    <name>The Dharohar Project / Mumford &amp; Sons</name>
+                <listeners>198</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/The%2BDharohar%2BProject%2B%252F%2BMumford%2B%2526%2BSons</url>
+    <streamable>0</streamable>
+            <image size="small">http://userserve-ak.last.fm/serve/34/56295315.jpg</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/56295315.jpg</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/56295315.jpg</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/56295315.jpg</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/500/56295315/The+Dharohar+Project++Mumford++Sons+folder.jpg</image>
+    </artist><artist>
+    <name>Tamara Mumford</name>
+                <listeners>124</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Tamara+Mumford</url>
+    <streamable>0</streamable>
+            <image size="small">http://userserve-ak.last.fm/serve/34/42311317.jpg</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/42311317.jpg</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/42311317.jpg</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/42311317.jpg</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/500/42311317/Tamara+Mumford.jpg</image>
+    </artist><artist>
+    <name>Mumford &amp; Sons Lullabies Tribute Band</name>
+                <listeners>189</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Mumford%2B%2526%2BSons%2BLullabies%2BTribute%2BBand</url>
+    <streamable>0</streamable>
+            <image size="small">http://userserve-ak.last.fm/serve/34/66769518.jpg</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/66769518.jpg</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/66769518.jpg</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/66769518.jpg</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/_/66769518/Mumford++Sons+Lullabies+Tribute+Band+mzi_hptokqgf_170x17075.jpg</image>
+    </artist><artist>
+    <name>Mumford  sons</name>
+                <listeners>108</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Mumford++sons</url>
+    <streamable>0</streamable>
+            <image size="small">http://userserve-ak.last.fm/serve/34/61876501.png</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/61876501.png</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/61876501.png</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/61876501.png</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/_/61876501/Mumford++sons+mistag.png</image>
+    </artist><artist>
+    <name>Dharohar Project, Laura Marling And Mumford And Sons</name>
+                <listeners>220</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Dharohar+Project%2C+Laura+Marling+And+Mumford+And+Sons</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>Breakage Vs Mumford &amp; Sons</name>
+                <listeners>147</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Breakage%2BVs%2BMumford%2B%2526%2BSons</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>Mumford   Sons</name>
+                <listeners>71</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Mumford+++Sons</url>
+    <streamable>0</streamable>
+            <image size="small">http://userserve-ak.last.fm/serve/34/61876503.png</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/61876503.png</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/61876503.png</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/61876503.png</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/_/61876503/Mumford+++Sons+mistag.png</image>
+    </artist><artist>
+    <name>Dharohar Project &amp; Mumford &amp; Sons</name>
+                <listeners>118</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Dharohar%2BProject%2B%2526%2BMumford%2B%2526%2BSons</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>Mumford &amp; Sons, Mumford &amp; Sons</name>
+                <listeners>11</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Mumford%2B%2526%2BSons%252C%2BMumford%2B%2526%2BSons</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>Marvin Mumford</name>
+                <listeners>30</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Marvin+Mumford</url>
+    <streamable>1</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>Laura Marling ft. Mumford &amp; Sons</name>
+                <listeners>95</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Laura%2BMarling%2Bft.%2BMumford%2B%2526%2BSons</url>
+    <streamable>0</streamable>
+            <image size="small">http://userserve-ak.last.fm/serve/34/61604987.jpg</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/61604987.jpg</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/61604987.jpg</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/61604987.jpg</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/_/61604987/Laura+Marling+ft+Mumford++Sons+88595_2.jpg</image>
+    </artist><artist>
+    <name>Ray Davies ft Mumford &amp; Sons</name>
+                <listeners>94</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Ray%2BDavies%2Bft%2BMumford%2B%2526%2BSons</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>Mumford &amp; Suns</name>
+                <listeners>21</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/+noredirect/Mumford%2B%2526%2BSuns</url>
+    <streamable>0</streamable>
+            <image size="small">http://userserve-ak.last.fm/serve/34/61876461.png</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/61876461.png</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/61876461.png</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/61876461.png</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/_/61876461/Mumford++Suns+mistag.png</image>
+    </artist><artist>
+    <name>Mumford %26 Sons</name>
+                <listeners>68</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Mumford%2B%252526%2BSons</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>Mumford &amp; Sons and Laura Marling</name>
+                <listeners>90</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Mumford%2B%2526%2BSons%2Band%2BLaura%2BMarling</url>
+    <streamable>0</streamable>
+            <image size="small">http://userserve-ak.last.fm/serve/34/58439393.jpg</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/58439393.jpg</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/58439393.jpg</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/58439393.jpg</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/_/58439393/Mumford++Sons+and+Laura+Marling+88595_2.jpg</image>
+    </artist></artistmatches>
+</results></lfm>

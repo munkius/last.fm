@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+<results for="tool" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">
+<opensearch:Query role="request" searchTerms="tool" startPage="1" />
+<opensearch:totalResults>533</opensearch:totalResults>
+<opensearch:startIndex>0</opensearch:startIndex>
+<opensearch:itemsPerPage>30</opensearch:itemsPerPage><artistmatches>
+<artist>
+    <name>Tool</name>
+                <listeners>1332090</listeners>
+        <mbid>66fc5bf8-daa4-4241-b378-9bc9077939d2</mbid>
+                    <url>http://www.last.fm/music/Tool</url>
+    <streamable>1</streamable>
+            <image size="small">http://userserve-ak.last.fm/serve/34/3727739.jpg</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/3727739.jpg</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/3727739.jpg</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/3727739.jpg</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/500/3727739/Tool+1199177781240.jpg</image>
+    </artist><artist>
+    <name>Deftones, Tool, Glassjaw</name>
+                <listeners>5104</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Deftones%2C+Tool%2C+Glassjaw</url>
+    <streamable>0</streamable>
+            <image size="small">http://userserve-ak.last.fm/serve/34/42242765.png</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/42242765.png</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/42242765.png</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/42242765.png</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/_/42242765/Deftones+Tool+Glassjaw+Keepstatsclean.png</image>
+    </artist><artist>
+    <name>Creed and Tool</name>
+                <listeners>3152</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Creed+and+Tool</url>
+    <streamable>0</streamable>
+            <image size="small">http://userserve-ak.last.fm/serve/34/61904625.jpg</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/61904625.jpg</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/61904625.jpg</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/61904625.jpg</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/_/61904625/Creed+and+Tool.jpg</image>
+    </artist><artist>
+    <name>Korn, Slipknot, Godsmack, Deftones, Tool, Incubus</name>
+                <listeners>3133</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Korn%2C+Slipknot%2C+Godsmack%2C+Deftones%2C+Tool%2C+Incubus</url>
+    <streamable>0</streamable>
+            <image size="small">http://userserve-ak.last.fm/serve/34/25550143.jpg</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/25550143.jpg</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/25550143.jpg</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/25550143.jpg</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/_/25550143/Korn+Slipknot+Godsmack+Deftones+Tool+Incubus.jpg</image>
+    </artist><artist>
+    <name>Henry Rollins/Tool</name>
+                <listeners>2897</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Henry%2BRollins%252FTool</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>Marc O'Tool</name>
+                <listeners>2740</listeners>
+        <mbid>c4e64fda-296e-45d2-b896-e9712431db8f</mbid>
+                    <url>http://www.last.fm/music/Marc+O%27Tool</url>
+    <streamable>0</streamable>
+            <image size="small">http://userserve-ak.last.fm/serve/34/96866.jpg</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/96866.jpg</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/96866.jpg</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/96866.jpg</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/_/96866/Marc+OTool.jpg</image>
+    </artist><artist>
+    <name>Sonic Tool</name>
+                <listeners>2440</listeners>
+        <mbid>723083a2-0b43-4354-bec9-dffcfda15386</mbid>
+                    <url>http://www.last.fm/music/Sonic+Tool</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>Rage Against the Machine &amp; Tool</name>
+                <listeners>2432</listeners>
+        <mbid>e8f37d0b-d648-4a9c-a127-47d5ece4102b</mbid>
+                    <url>http://www.last.fm/music/Rage%2BAgainst%2Bthe%2BMachine%2B%2526%2BTool</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>Tool/Stained/Korn/Chevelle</name>
+                <listeners>1853</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Tool%252FStained%252FKorn%252FChevelle</url>
+    <streamable>0</streamable>
+            <image size="small">http://userserve-ak.last.fm/serve/34/22858671.jpg</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/22858671.jpg</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/22858671.jpg</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/22858671.jpg</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/_/22858671/ToolStainedKornChevelle+tool_maynard.jpg</image>
+    </artist><artist>
+    <name>Marc O Tool</name>
+                <listeners>1396</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Marc+O+Tool</url>
+    <streamable>0</streamable>
+            <image size="small">http://userserve-ak.last.fm/serve/34/24269631.jpg</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/24269631.jpg</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/24269631.jpg</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/24269631.jpg</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/500/24269631/Marc+O+Tool+DSC_0043.jpg</image>
+    </artist><artist>
+    <name>Evanescence, Linkin Park, Godsmack, Disturbed, Pantera, Limp Bizkit, Tool, Staind, Korn</name>
+                <listeners>1432</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/+noredirect/Evanescence%2C+Linkin+Park%2C+Godsmack%2C+Disturbed%2C+Pantera%2C+Limp+Bizkit%2C+Tool%2C+Staind%2C+Korn</url>
+    <streamable>0</streamable>
+            <image size="small">http://userserve-ak.last.fm/serve/34/53534771.jpg</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/53534771.jpg</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/53534771.jpg</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/53534771.jpg</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/_/53534771/Evanescence+Linkin+Park+Godsmack+Disturbed+Pantera+aaa.jpg</image>
+    </artist><artist>
+    <name>King Crimson &amp; Tool</name>
+                <listeners>1295</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/King%2BCrimson%2B%2526%2BTool</url>
+    <streamable>0</streamable>
+            <image size="small">http://userserve-ak.last.fm/serve/34/214723.jpg</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/214723.jpg</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/214723.jpg</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/214723.jpg</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/_/214723/King+Crimson++Tool.jpg</image>
+    </artist><artist>
+    <name>Linkin Park f.  Godsmack, Disturbed, Pantera, Limp  Bizkit, Tool, Staind, Korn -</name>
+                <listeners>1312</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Linkin+Park+f.++Godsmack%2C+Disturbed%2C+Pantera%2C+Limp++Bizkit%2C+Tool%2C+Staind%2C+Korn+-</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>Power Tool</name>
+                <listeners>1146</listeners>
+        <mbid>217f8cde-243c-4c0e-b4c5-175b5d55f2f2</mbid>
+                    <url>http://www.last.fm/music/Power+Tool</url>
+    <streamable>0</streamable>
+            <image size="small">http://userserve-ak.last.fm/serve/34/19960339.jpg</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/19960339.jpg</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/19960339.jpg</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/19960339.jpg</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/_/19960339/Power+Tool+NELSON.jpg</image>
+    </artist><artist>
+    <name>Tool Tribute</name>
+                <listeners>939</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Tool+Tribute</url>
+    <streamable>1</streamable>
+            <image size="small">http://userserve-ak.last.fm/serve/34/37152357.jpg</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/37152357.jpg</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/37152357.jpg</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/37152357.jpg</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/_/37152357/Tool+Tribute+tooltribute.jpg</image>
+    </artist><artist>
+    <name>Creed &amp; Tool</name>
+                <listeners>818</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Creed%2B%2526%2BTool</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>Zach de la Rocha and TOOL</name>
+                <listeners>835</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Zach+de+la+Rocha+and+TOOL</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>Tool Lullabies</name>
+                <listeners>707</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Tool+Lullabies</url>
+    <streamable>1</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>Karaoke - Tool</name>
+                <listeners>645</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Karaoke+-+Tool</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>Tool &amp; Rage Against The Machine</name>
+                <listeners>693</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Tool%2B%2526%2BRage%2BAgainst%2BThe%2BMachine</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>Hank Corwin/Antenna Tool &amp; Die Co.</name>
+                <listeners>677</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Hank%2BCorwin%252FAntenna%2BTool%2B%2526%2BDie%2BCo.</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>Timmy O' Tool</name>
+                <listeners>573</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Timmy+O%27+Tool</url>
+    <streamable>0</streamable>
+            <image size="small">http://userserve-ak.last.fm/serve/34/47125381.jpg</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/47125381.jpg</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/47125381.jpg</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/47125381.jpg</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/500/47125381/Timmy+O+Tool+timmy+en+mexico.jpg</image>
+    </artist><artist>
+    <name>Tribute to Tool</name>
+                <listeners>555</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Tribute+to+Tool</url>
+    <streamable>0</streamable>
+            <image size="small">http://userserve-ak.last.fm/serve/34/18734479.jpg</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/18734479.jpg</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/18734479.jpg</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/18734479.jpg</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/_/18734479/Tribute+to+Tool+tribute.jpg</image>
+    </artist><artist>
+    <name>Tool and Rage Against The Machine</name>
+                <listeners>546</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Tool+and+Rage+Against+The+Machine</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>Korn,311,LimpBizk,Incubus,Tool</name>
+                <listeners>397</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Korn%2C311%2CLimpBizk%2CIncubus%2CTool</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>Big Tool 4 U</name>
+                <listeners>352</listeners>
+        <mbid>704701d5-8d74-406e-9abc-2da13cbf0daa</mbid>
+                    <url>http://www.last.fm/music/Big+Tool+4+U</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>DJ Tool</name>
+                <listeners>287</listeners>
+        <mbid>bbfa1e12-8b61-4ed8-bc6e-52d2298f41a2</mbid>
+                    <url>http://www.last.fm/music/DJ+Tool</url>
+    <streamable>1</streamable>
+            <image size="small">http://userserve-ak.last.fm/serve/34/54076973.jpg</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/54076973.jpg</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/54076973.jpg</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/54076973.jpg</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/_/54076973/DJ+Tool+m_b74b988f33f34f1eb7f6bc8bc626.jpg</image>
+    </artist><artist>
+    <name>Tool, Staind, Korn &amp; Chevelle</name>
+                <listeners>310</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Tool%252C%2BStaind%252C%2BKorn%2B%2526%2BChevelle</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>Tool &amp; Creed</name>
+                <listeners>256</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Tool%2B%2526%2BCreed</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>Tool's</name>
+                <listeners>137</listeners>
+        <mbid>f70d2175-d942-4c05-b3e4-a753a4ee92db</mbid>
+                    <url>http://www.last.fm/music/Tool%27s</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist></artistmatches>
+</results></lfm>

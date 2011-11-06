@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+<results for="bløf" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">
+<opensearch:Query role="request" searchTerms="bløf" startPage="1" />
+<opensearch:totalResults>185</opensearch:totalResults>
+<opensearch:startIndex>0</opensearch:startIndex>
+<opensearch:itemsPerPage>30</opensearch:itemsPerPage><artistmatches>
+<artist>
+    <name>Bløf</name>
+                <listeners>77633</listeners>
+        <mbid>d7ac3cc7-0d65-476b-9b81-d3e872672a2f</mbid>
+                    <url>http://www.last.fm/music/Bl%C3%B8f</url>
+    <streamable>1</streamable>
+            <image size="small">http://userserve-ak.last.fm/serve/34/8406073.jpg</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/8406073.jpg</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/8406073.jpg</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/8406073.jpg</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/500/8406073/Blf++persfoto.jpg</image>
+    </artist><artist>
+    <name>Counting Crows &amp; Bløf</name>
+                <listeners>6884</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Counting%2BCrows%2B%2526%2BBl%25C3%25B8f</url>
+    <streamable>0</streamable>
+            <image size="small">http://userserve-ak.last.fm/serve/34/7162181.jpg</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/7162181.jpg</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/7162181.jpg</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/7162181.jpg</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/_/7162181/Counting+Crows++Blf+dsc_0259_2.jpg</image>
+    </artist><artist>
+    <name>BLØF</name>
+                <listeners>1978</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/BL%C3%98F</url>
+    <streamable>1</streamable>
+            <image size="small">http://userserve-ak.last.fm/serve/34/54206429.jpg</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/54206429.jpg</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/54206429.jpg</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/54206429.jpg</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/500/54206429/BLF++persfoto+voor+April.jpg</image>
+    </artist><artist>
+    <name>Krezip &amp; Blof</name>
+                <listeners>494</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Krezip%2B%2526%2BBlof</url>
+    <streamable>0</streamable>
+            <image size="small">http://userserve-ak.last.fm/serve/34/17677033.jpg</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/17677033.jpg</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/17677033.jpg</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/17677033.jpg</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/500/17677033/Krezip++Blof+dsc01485.jpg</image>
+    </artist><artist>
+    <name>Blof speelt doemaar</name>
+                <listeners>388</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Blof+speelt+doemaar</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>Blof &amp; Trijntje Oosterhuis</name>
+                <listeners>319</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Blof%2B%2526%2BTrijntje%2BOosterhuis</url>
+    <streamable>0</streamable>
+            <image size="small">http://userserve-ak.last.fm/serve/34/13913815.jpg</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/13913815.jpg</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/13913815.jpg</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/13913815.jpg</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/_/13913815/Blof++Trijntje+Oosterhuis+trijntje_oosterhuis_en_blof.jpg</image>
+    </artist><artist>
+    <name>Blof en Candy Dulfer</name>
+                <listeners>309</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Blof+en+Candy+Dulfer</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>Blof (Met Kodo)</name>
+                <listeners>204</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Blof+%28Met+Kodo%29</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>BLÖF</name>
+                <listeners>6</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/BL%C3%96F</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>Bløf (Met Kodo)</name>
+                <listeners>190</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Bl%C3%B8f+%28Met+Kodo%29</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>Blof &amp; Cristina Branco</name>
+                <listeners>181</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Blof%2B%2526%2BCristina%2BBranco</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>Heather Nova &amp; Bløf</name>
+                <listeners>141</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Heather%2BNova%2B%2526%2BBl%25C3%25B8f</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>Bløf &amp; Kodo</name>
+                <listeners>75</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Bl%25C3%25B8f%2B%2526%2BKodo</url>
+    <streamable>0</streamable>
+            <image size="small">http://userserve-ak.last.fm/serve/34/30195325.jpg</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/30195325.jpg</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/30195325.jpg</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/30195325.jpg</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/_/30195325/Blf++Kodo.jpg</image>
+    </artist><artist>
+    <name>Bløf &amp; Brahim El Belkani</name>
+                <listeners>104</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Bl%25C3%25B8f%2B%2526%2BBrahim%2BEl%2BBelkani</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>Blof en Frank Boeijen</name>
+                <listeners>96</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Blof+en+Frank+Boeijen</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>Blof &amp; Omar Faruk Tekbilek</name>
+                <listeners>95</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Blof%2B%2526%2BOmar%2BFaruk%2BTekbilek</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>Blof &amp; Rowwen Heze</name>
+                <listeners>93</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Blof%2B%2526%2BRowwen%2BHeze</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>Frank Boeijen &amp; Pascal (Blof)</name>
+                <listeners>93</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Frank%2BBoeijen%2B%2526%2BPascal%2B%2528Blof%2529</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>Bløf &amp; Jigme Drukpa</name>
+                <listeners>89</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Bl%25C3%25B8f%2B%2526%2BJigme%2BDrukpa</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>Krezip &amp; Bløf</name>
+                <listeners>41</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Krezip%2B%2526%2BBl%25C3%25B8f</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>121. Blof</name>
+                <listeners>32</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/+noredirect/121.+Blof</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>Blof &amp; Kodo</name>
+                <listeners>30</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/+noredirect/Blof%2B%2526%2BKodo</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>Bløf @ 4UOnly.biz</name>
+                <listeners>97</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Bl%C3%B8f+%40+4UOnly.biz</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>Blof + Heather Nova</name>
+                <listeners>71</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Blof%2B%252B%2BHeather%2BNova</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>150 Blof</name>
+                <listeners>23</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/+noredirect/150+Blof</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>033 Blof</name>
+                <listeners>23</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/+noredirect/033+Blof</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>Counting Crows with Bløf</name>
+                <listeners>70</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/Counting+Crows+with+Bl%C3%B8f</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>01. blof</name>
+                <listeners>22</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/+noredirect/01.+blof</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>03. blof</name>
+                <listeners>20</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/+noredirect/03.+blof</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist><artist>
+    <name>08. Blof</name>
+                <listeners>20</listeners>
+        <mbid></mbid>
+                    <url>http://www.last.fm/music/+noredirect/08.+Blof</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist></artistmatches>
+</results></lfm>
