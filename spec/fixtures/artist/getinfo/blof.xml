@@ -1,22 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <lfm status="ok">
 <artist>
-  <name>Bløf</name>
-  <mbid>d7ac3cc7-0d65-476b-9b81-d3e872672a2f</mbid>
-    <url>http://www.last.fm/music/Bl%C3%B8f</url>
-  <image size="small">http://userserve-ak.last.fm/serve/34/8406073.jpg</image>
-  <image size="medium">http://userserve-ak.last.fm/serve/64/8406073.jpg</image>
-  <image size="large">http://userserve-ak.last.fm/serve/126/8406073.jpg</image>
-  <image size="extralarge">http://userserve-ak.last.fm/serve/252/8406073.jpg</image>
-  <image size="mega">http://userserve-ak.last.fm/serve/500/8406073/Blf++persfoto.jpg</image>
-  <streamable>1</streamable>
+  <name>Blof</name>
+  <mbid></mbid>
+    <url>http://www.last.fm/music/+noredirect/Blof</url>
+  <image size="small">http://userserve-ak.last.fm/serve/34/31690803.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/31690803.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/31690803.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/31690803.jpg</image>
+  <image size="mega">http://userserve-ak.last.fm/serve/_/31690803/Blof+umojaoopshi.jpg</image>
+  <streamable>0</streamable>
   <stats>
-    <listeners>77744</listeners>
-    <playcount>2727841</playcount>
+    <listeners>20698</listeners>
+    <playcount>551769</playcount>
       </stats>
 
   <similar>
 	    <artist>
+	  <name>Bløf</name>
+	  <url>http://www.last.fm/music/Bl%C3%B8f</url>
+	  <image size="small">http://userserve-ak.last.fm/serve/34/8406073.jpg</image>
+	  <image size="medium">http://userserve-ak.last.fm/serve/64/8406073.jpg</image>
+	  <image size="large">http://userserve-ak.last.fm/serve/126/8406073.jpg</image>
+	  <image size="extralarge">http://userserve-ak.last.fm/serve/252/8406073.jpg</image>
+	  <image size="mega">http://userserve-ak.last.fm/serve/500/8406073/Blf++persfoto.jpg</image>
+	  
+	        	</artist>
+    <artist>
 	  <name>Acda en de Munnik</name>
 	  <url>http://www.last.fm/music/Acda+en+de+Munnik</url>
 	  <image size="small">http://userserve-ak.last.fm/serve/34/2291466.jpg</image>
@@ -56,29 +66,11 @@
 	  <image size="mega">http://userserve-ak.last.fm/serve/500/51213817/Ilse+DeLange+++Next+To+Me.png</image>
 	  
 	        	</artist>
-    <artist>
-	  <name>Racoon</name>
-	  <url>http://www.last.fm/music/Racoon</url>
-	  <image size="small">http://userserve-ak.last.fm/serve/34/33866621.jpg</image>
-	  <image size="medium">http://userserve-ak.last.fm/serve/64/33866621.jpg</image>
-	  <image size="large">http://userserve-ak.last.fm/serve/126/33866621.jpg</image>
-	  <image size="extralarge">http://userserve-ak.last.fm/serve/252/33866621.jpg</image>
-	  <image size="mega">http://userserve-ak.last.fm/serve/_/33866621/Racoon++IPO.jpg</image>
-	  
-	        	</artist>
   </similar>
     <tags>
         <tag>
 	  <name>dutch</name>
 	  <url>http://www.last.fm/tag/dutch</url>
-	</tag>
-        <tag>
-	  <name>nederlandstalig</name>
-	  <url>http://www.last.fm/tag/nederlandstalig</url>
-	</tag>
-        <tag>
-	  <name>pop</name>
-	  <url>http://www.last.fm/tag/pop</url>
 	</tag>
         <tag>
 	  <name>nederpop</name>
@@ -88,11 +80,19 @@
 	  <name>rock</name>
 	  <url>http://www.last.fm/tag/rock</url>
 	</tag>
+        <tag>
+	  <name>pop</name>
+	  <url>http://www.last.fm/tag/pop</url>
+	</tag>
+        <tag>
+	  <name>netherlands</name>
+	  <url>http://www.last.fm/tag/netherlands</url>
+	</tag>
       </tags>
       <bio>
-    <published>Fri, 12 Aug 2011 20:20:38 +0000</published>
-    <summary><![CDATA[BLØF was officially founded in 1992, in the province of Zeeland, The Netherlands. The original lineup was composed of the members <a href="http://www.last.fm/music/Peter+Slager" class="bbcode_artist">Peter Slager</a>, <a href="http://www.last.fm/music/Paskal+Jakobsen" class="bbcode_artist">Paskal Jakobsen</a>, <a href="http://www.last.fm/music/BAS+KENNIS" class="bbcode_artist">BAS KENNIS</a> and <a href="http://www.last.fm/music/Henk+Tjoonk" class="bbcode_artist">Henk Tjoonk</a>. Over the course of six years, the group had released nine records with multiple hit songs, and performed many sold-out performances. Their song <a title="BL&Oslash;F &ndash; Aan De Kust" href="http://www.last.fm/music/BL%C3%98F/_/Aan+De+Kust" class="bbcode_track">Aan De Kust</a> (At the coast) from their debut album <a title="BL&Oslash;F - Naakt onder de hemel" href="http://www.last.fm/music/BL%C3%98F/Naakt+onder+de+hemel" class="bbcode_album">Naakt onder de hemel</a>  (Naked under the sky) is considered to be the new anthem of the province Zeeland, because the song is about this province. ]]></summary>
-    <content><![CDATA[BLØF was officially founded in 1992, in the province of Zeeland, <span title="Unknown place" class="bbcode_unknown">The Netherlands</span>. The original lineup was composed of the members <a href="http://www.last.fm/music/Peter+Slager" class="bbcode_artist">Peter Slager</a>, <a href="http://www.last.fm/music/Paskal+Jakobsen" class="bbcode_artist">Paskal Jakobsen</a>, <a href="http://www.last.fm/music/BAS+KENNIS" class="bbcode_artist">BAS KENNIS</a> and <a href="http://www.last.fm/music/Henk+Tjoonk" class="bbcode_artist">Henk Tjoonk</a>. Over the course of six years, the group had released nine records with multiple hit songs, and performed many sold-out performances. Their song <a title="BL&Oslash;F &ndash; Aan De Kust" href="http://www.last.fm/music/BL%C3%98F/_/Aan+De+Kust" class="bbcode_track">Aan De Kust</a> (At the coast) from their debut album <a title="BL&Oslash;F - Naakt onder de hemel" href="http://www.last.fm/music/BL%C3%98F/Naakt+onder+de+hemel" class="bbcode_album">Naakt onder de hemel</a>  (Naked under the sky) is considered to be the new anthem of the province Zeeland, because the song is about this province.  Rather than singing in English, as is common practice among Dutch bands, BLØF produces songs in their native Dutch, vastly contributing to the popularization of <a href="http://www.last.fm/tag/nederpop" class="bbcode_tag" rel="tag">nederpop</a>, as the genre has been known in the Netherlands..  Besides having deeply sensitive lyrics, BLØF incorporates sounds from around the world. Their hit song <a title="BL&Oslash;F &ndash; Aanzoek zonder ringen" href="http://www.last.fm/music/BL%C3%98F/_/Aanzoek+zonder+ringen" class="bbcode_track">Aanzoek zonder ringen</a> (Proposal without rings) uses Japanese kodo drums in the background, while their album, <a title="Bl&oslash;f - UMOJA" href="http://www.last.fm/music/Bl%C3%B8f/UMOJA" class="bbcode_album">UMOJA</a>, was the result of a journey around the world to capture multi-national sounds.  Critics claim that their formula for success is the way they crafted songs; they try to find the ideal balance between alternative and <a href="http://www.last.fm/tag/popular%20rock" class="bbcode_tag" rel="tag">popular rock</a>, poetic lyrics, and the voice of Paskal Jakobsen. This has brought BLØF the hits, awards, airplay, and (inter-)national recognition that has propelled these four musicians into the most successful Dutch-language group in recent years.  Besides success, BLØF has also had its fair share of tragedy. Drummer <a href="http://www.last.fm/music/Chris+G%C3%B6tte" class="bbcode_artist">Chris G&ouml;tte</a>, who replaced Henk Tjoonk in 1997, died in a motor crash on March 17th, 2001. When the news got out, the <a href="http://www.blof.nl/" rel="nofollow">Bløf website</a> was filled with condolences from fans and friends. In June, the band released a memorial album called <a title="Bl&oslash;f - Oog in oog" href="http://www.last.fm/music/Bl%C3%B8f/Oog+in+oog" class="bbcode_album">Oog in oog</a> (Eye to eye). The revenue for the album was donated to War Child. <a href="http://www.last.fm/music/Norman+Bonink" class="bbcode_artist">Norman Bonink</a> (who came from <a href="http://www.last.fm/music/Frank+Boeijen+Groep" class="bbcode_artist">Frank Boeijen Groep</a>) joined the band that same year and continues to be their drummer today.
+    <published>Sun, 6 Feb 2011 20:09:39 +0000</published>
+    <summary><![CDATA[BLØF (uitspraak: 'bluf') is een Nederlandse en Nederlandstalige popgroep uit Zeeland.  BLØF werd opgericht in 1992. Het eerste album, Naakt onder de hemel, werd in eigen beheer uitgebracht. In 1998 werd BLØF bekend bij het grote publiek met de single Liefs uit Londen waarna de populariteit van de band sterk steeg. De single kwam van het tweede album &quot;Helder&quot;. Na het succes van Liefs uit Londen worden live-versies van Aan de Kust en Wat zou je doen van het debuutalbum ook hits. Het derde album Boven brengt de hit Harder dan ik hebben kan.]]></summary>
+    <content><![CDATA[BLØF (uitspraak: 'bluf') is een Nederlandse en Nederlandstalige popgroep uit Zeeland.  BLØF werd opgericht in 1992. Het eerste album, Naakt onder de hemel, werd in eigen beheer uitgebracht. In 1998 werd BLØF bekend bij het grote publiek met de single Liefs uit Londen waarna de populariteit van de band sterk steeg. De single kwam van het tweede album &quot;Helder&quot;. Na het succes van Liefs uit Londen worden live-versies van Aan de Kust en Wat zou je doen van het debuutalbum ook hits. Het derde album Boven brengt de hit Harder dan ik hebben kan. Niets dan dit en Zaterdag worden ook uitgebracht op single, maar worden minder grote hits. &quot;Zaterdag&quot; is wel elke zaterdagmorgen te horen als opener van het Radio 2-programma &quot;Cappuccino&quot;. Het vierde album Watermakers wordt voorafgegaan door de hit Dansen aan zee. Ook Hier en Ze is er niet worden hits.
     
 User-contributed text is available under the Creative Commons By-SA License and may also be available under the GNU FDL.]]></content>
   </bio>

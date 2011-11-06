@@ -1,1 +1,1 @@
-require 'model/artist'
+require 'last.fm/artist'

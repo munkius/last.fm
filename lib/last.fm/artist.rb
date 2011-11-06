@@ -7,7 +7,7 @@ module LastFM
     extend RequestHelper
     
     UNIMPLEMENTED = [:add_tags, :correction, :events, :images, :info, :past_events, :podcast, :similar,
-                     :user_tags, :top_albums, :top_fans, :top_tags, :top_tracks, :remove_tag, :share, :shout]
+                     :user_tags, :top_albums, :top_fans, :top_tags, :remove_tag, :share, :shout]
 
     UNIMPLEMENTED.each do |unimplemented_method|
      define_method(unimplemented_method) do
@@ -66,5 +66,32 @@ module LastFM
       @tags = artist.xpath("//tags/tag").map{|t| t.at("name").content}
       self
     end
+
+    def top_tracks
+      xml = Artist.do_request(method: "artist.gettoptracks", artist: @name, autocorrect: 1)
+      
+      top_tracks = []
+      xml.xpath("//track").each do |track|
+        top_tracks << Track.new(
+          track.attributes["rank"].value.to_i,
+          track.at("name").content,
+          track.at("duration").content.to_i,
+          track.at("playcount").content.to_i,
+          track.at("listeners").content.to_i,
+          track.at("url").content,
+          track.at("streamable").content == "1",
+          {
+            small: (track.at('image[@size="small"]').content rescue nil),
+            medium: (track.at('image[@size="medium"]').content rescue nil),
+            large: (track.at('image[@size="large"]').content rescue nil),
+            extralarge: (track.at('image[@size="extralarge"]').content rescue nil)
+          }
+        )
+      end
+      
+      top_tracks
+    end
+    
+    Track = Struct::new(:rank, :name, :duration, :playcount, :listeners, :url, :streamable, :images)
   end
 end

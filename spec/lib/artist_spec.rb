@@ -101,9 +101,41 @@ describe LastFM::Artist do
     end
     
     it "should use autocorrection" do
+      stub_response(method: "artist.getinfo", artist: "blof")
       stub_response(method: "artist.getinfo", artist: "blof", autocorrect: 1)
       blof = LastFM::Artist.new("blof").info!
       blof.name.should == "Bløf"
     end
   end
+  
+  describe "top tracks" do
+    
+    it "should be found for Tool" do
+      stub_response(method: "artist.gettoptracks", artist: "tool", autocorrect: 1)
+      top_tracks = LastFM::Artist.new("tool").top_tracks
+      
+      top_tracks.size.should == 50
+      schism = top_tracks.first
+      schism.rank.should == 1
+      schism.name.should == "Schism"
+      schism.duration.should == 407
+      schism.playcount.should == 198814
+      schism.listeners.should == 65068
+      schism.url.should == "http://www.last.fm/music/Tool/_/Schism"
+      schism.streamable.should be_true
+
+      schism.images[:small].should == "http://userserve-ak.last.fm/serve/34s/69544646.png" 
+      schism.images[:medium].should == "http://userserve-ak.last.fm/serve/64s/69544646.png"
+      schism.images[:large].should == "http://userserve-ak.last.fm/serve/126/69544646.png"
+      schism.images[:extralarge].should == "http://userserve-ak.last.fm/serve/300x300/69544646.png"
+    end
+    
+    it "should use autocorrection" do
+      stub_response(method: "artist.gettoptracks", artist: "blof")
+      stub_response(method: "artist.gettoptracks", artist: "blof", autocorrect: 1)
+      top_tracks = LastFM::Artist.new("blof").top_tracks
+      top_tracks.first.name.should == "Harder Dan Ik Hebben Kan"
+    end
+  end
+  
 end
