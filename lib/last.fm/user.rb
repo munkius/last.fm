@@ -2,6 +2,7 @@ module LastFM
   class User
     include RequestHelper
     include Unimplemented
+    include Errors
     
     unimplemented methods: [:artist_tracks, :banned_tracks, :events, :friends, :info, :loved_tracks, :neighbours,
                             :past_events, :personal_tags, :playlists, :recent_stations, :recent_tracks,
