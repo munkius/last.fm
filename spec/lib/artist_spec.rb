@@ -8,7 +8,7 @@ describe LastFM::Artist do
 
     describe "for Tool" do
       before :each do
-        stub_response(method: "artist.search", artist: "tool")
+        stub_artist_response(method: "artist.search", artist: "tool")
         @artists = LastFM::Artist.search('tool')
       end
     
@@ -38,14 +38,14 @@ describe LastFM::Artist do
     
     describe "for artists with spaces and funny characters in their name" do
       it "should find mumford & sons" do
-        stub_response(method: "artist.search", artist: "mumford & sons")
+        stub_artist_response(method: "artist.search", artist: "mumford & sons")
         artists = LastFM::Artist.search('mumford & sons')
         artists.size.should == 30
         artists.first.name.should == "Mumford & Sons"
       end
 
       it "should find bløf" do
-        stub_response(method: "artist.search", artist: "bløf")
+        stub_artist_response(method: "artist.search", artist: "bløf")
         artists = LastFM::Artist.search('bløf')
         artists.size.should == 30
         artists.first.name.should == "Bløf"
@@ -73,7 +73,7 @@ describe LastFM::Artist do
   describe "info" do
     
     it "should be found for Tool" do
-      stub_response(method: "artist.getinfo", artist: "tool", autocorrect: 1)
+      stub_artist_response(method: "artist.getinfo", artist: "tool", autocorrect: 1)
       tool = LastFM::Artist.new("tool")
       tool.name.should == "tool"
       
@@ -101,8 +101,8 @@ describe LastFM::Artist do
     end
     
     it "should use autocorrection" do
-      stub_response(method: "artist.getinfo", artist: "blof")
-      stub_response(method: "artist.getinfo", artist: "blof", autocorrect: 1)
+      stub_artist_response(method: "artist.getinfo", artist: "blof")
+      stub_artist_response(method: "artist.getinfo", artist: "blof", autocorrect: 1)
       blof = LastFM::Artist.new("blof").info!
       blof.name.should == "Bløf"
     end
@@ -111,7 +111,7 @@ describe LastFM::Artist do
   describe "top tracks" do
     
     it "should be found for Tool" do
-      stub_response(method: "artist.gettoptracks", artist: "tool", autocorrect: 1)
+      stub_artist_response(method: "artist.gettoptracks", artist: "tool", autocorrect: 1)
       top_tracks = LastFM::Artist.new("tool").top_tracks
       
       top_tracks.size.should == 50
@@ -131,8 +131,8 @@ describe LastFM::Artist do
     end
     
     it "should use autocorrection" do
-      stub_response(method: "artist.gettoptracks", artist: "blof")
-      stub_response(method: "artist.gettoptracks", artist: "blof", autocorrect: 1)
+      stub_artist_response(method: "artist.gettoptracks", artist: "blof")
+      stub_artist_response(method: "artist.gettoptracks", artist: "blof", autocorrect: 1)
       top_tracks = LastFM::Artist.new("blof").top_tracks
       top_tracks.first.name.should == "Harder Dan Ik Hebben Kan"
     end

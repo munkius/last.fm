@@ -1,19 +1,13 @@
-require 'open-uri'
-require 'nokogiri'
 require_relative 'request_helper'
+require_relative 'unimplemented'
 
 module LastFM
   class Artist
-    extend RequestHelper
+    include RequestHelper
+    include Unimplemented
     
-    UNIMPLEMENTED = [:add_tags, :correction, :events, :images, :info, :past_events, :podcast, :similar,
+    unimplemented methods: [:add_tags, :correction, :events, :images, :info, :past_events, :podcast, :similar,
                      :user_tags, :top_albums, :top_fans, :top_tags, :remove_tag, :share, :shout]
-
-    UNIMPLEMENTED.each do |unimplemented_method|
-     define_method(unimplemented_method) do
-       raise "Not implemented"
-     end
-    end
 
     attr_reader :name, :listeners, :images, :url, :streamable, :similar_artists, :tags
     
@@ -49,7 +43,7 @@ module LastFM
     end
     
     def info!
-      xml = Artist.do_request(method: "artist.getinfo", artist: @name, autocorrect: 1)
+      xml = do_request(method: "artist.getinfo", artist: @name, autocorrect: 1)
       artist = xml.at("artist")
       @name = artist.at("name").content
       @url = artist.at("url").content
@@ -68,7 +62,7 @@ module LastFM
     end
 
     def top_tracks
-      xml = Artist.do_request(method: "artist.gettoptracks", artist: @name, autocorrect: 1)
+      xml = do_request(method: "artist.gettoptracks", artist: @name, autocorrect: 1)
       
       top_tracks = []
       xml.xpath("//track").each do |track|
