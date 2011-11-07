@@ -1,6 +1,6 @@
 require 'rspec'
 require 'fakeweb'
-require 'lastfm'
+require 'last.fm'
 
 load File.expand_path('../support/stub_response.rb', __FILE__)
 
