@@ -1,22 +1,44 @@
 module LastFM
   class Artist
+    extend ImageReader
     include RequestHelper
     include Unimplemented
     
-    unimplemented methods: [:add_tags, :correction, :images, :info, :past_events, :podcast, :similar,
+    unimplemented methods: [:add_tags, :correction, :images_list, :info, :past_events, :podcast, :similar,
                      :user_tags, :top_albums, :top_fans, :top_tags, :remove_tag, :share, :shout]
 
     attr_reader :name, :listeners, :images, :url, :streamable, :similar_artists, :tags
     
-    def initialize(name, attributes={})
-      @name = name
-      @listeners = attributes[:listeners]
-      @url = attributes[:url]
-      @images = attributes[:images]
-      @streamable = attributes[:streamable]
-    end
-    
     class << self
+
+      def from_xml(xml)
+        name = xml.at("./name").content
+        
+        options = {}
+        options[:images] = images(xml, "./image")
+        options[:playcount] = xml.at("./playcount").content.to_i
+        options[:streamable] = xml.at("./streamable").content == "1"
+        options[:url] = xml.at("./url").content
+        
+        Artist.new(name, options)
+      end
+
+      def find(artistname)
+        xml = do_request(method: "artist.getinfo", artist: artistname, autocorrect: 1)
+        artist = xml.at("artist")
+        
+        name = artist.at("./name").content
+
+        options = {}
+        options[:url] = artist.at("./url").content
+        options[:images] = images(artist, "./image")
+        options[:listeners] = artist.at("./stats/listeners").content.to_i
+        options[:streamable] = artist.at("./streamable").content == "1"
+        options[:similar_artists] = artist.xpath("//similar/artist").map{|a| a.at("./name").content}
+        options[:tags] = artist.xpath("//tags/tag").map{|t| t.at("./name").content}
+        
+        Artist.new(name, options)
+      end
 
       def search(artist)
         result = []
@@ -26,36 +48,11 @@ module LastFM
             listeners: artist.at("./listeners").content.to_i,
             url: artist.at("./url").content,
             streamable: artist.at("./streamable").content == "1",
-            images: {
-              small: artist.at('./image[@size="small"]').content,
-              medium: artist.at('./image[@size="medium"]').content,
-              large: artist.at('./image[@size="large"]').content,
-              extralarge: artist.at('./image[@size="extralarge"]').content,
-              mega: artist.at('./image[@size="mega"]').content
-            }
+            images: images(artist, "./image")
           })
         end
         result
       end
-    end
-    
-    def info!
-      xml = do_request(method: "artist.getinfo", artist: @name, autocorrect: 1)
-      artist = xml.at("artist")
-      @name = artist.at("./name").content
-      @url = artist.at("./url").content
-      @images = {
-        small: artist.at('./image[@size="small"]').content,
-        medium: artist.at('./image[@size="medium"]').content,
-        large: artist.at('./image[@size="large"]').content,
-        extralarge: artist.at('./image[@size="extralarge"]').content,
-        mega: artist.at('./image[@size="mega"]').content
-      }
-      @listeners = artist.at("./stats/listeners").content.to_i
-      @streamable = artist.at("./streamable").content == "1"
-      @similar_artists = artist.xpath("//similar/artist").map{|a| a.at("./name").content}
-      @tags = artist.xpath("//tags/tag").map{|t| t.at("./name").content}
-      self
     end
 
     def top_tracks
@@ -86,7 +83,7 @@ module LastFM
     def events
       xml = do_request(method: "artist.getevents", artist: @name, autocorrect: 1)
       xml.remove_namespaces!
-      # puts xml.to_xml(:indent => 2)
+
       events = []
       xml.xpath("//event").each do |e|
         events << Event.from_xml(e)
@@ -94,7 +91,17 @@ module LastFM
       
       events
     end
-    
+
+  private
+
+    def initialize(name, options)
+      options = options.dup
+      @name = name
+      @images, @listeners, @playcount, @similar_artists, @streamable, @tags, @url = 
+        options.delete(:images), options.delete(:listeners), options.delete(:playcount), options.delete(:similar_artists), options.delete(:streamable), options.delete(:tags), options.delete(:url)
+        raise "Invalid options passed: #{options.keys.join(", ")}" if options.keys.size > 0
+    end
+ 
     Track = Struct::new(:rank, :name, :duration, :playcount, :listeners, :url, :streamable, :images)
   end
 end

@@ -14,7 +14,7 @@ describe LastFM::Artist do
     
       it "should find Tool" do
         @artists.size.should == 30
-        tool = @artists .first
+        tool = @artists.first
 
         tool.name.should == "Tool"
         tool.listeners.should == 1332090
@@ -74,21 +74,18 @@ describe LastFM::Artist do
     
     it "should be found for Tool" do
       stub_artist_response(method: "artist.getinfo", artist: "tool", autocorrect: 1)
-      tool = LastFM::Artist.new("tool")
-      tool.name.should == "tool"
-      
-      tool.info!
+      tool = LastFM::Artist.find("tool")
       tool.name.should == "Tool"
       tool.listeners.should == 1332090
       tool.url.should == "http://www.last.fm/music/Tool"
       tool.streamable.should be_true
     
       tool.images.size.should == 5
-      tool.images[:small].should == "http://userserve-ak.last.fm/serve/34/3727739.jpg"
-      tool.images[:medium].should == "http://userserve-ak.last.fm/serve/64/3727739.jpg"
-      tool.images[:large].should == "http://userserve-ak.last.fm/serve/126/3727739.jpg"
-      tool.images[:extralarge].should == "http://userserve-ak.last.fm/serve/252/3727739.jpg"
-      tool.images[:mega].should == "http://userserve-ak.last.fm/serve/500/3727739/Tool+1199177781240.jpg"
+      tool.images.small.should == "http://userserve-ak.last.fm/serve/34/3727739.jpg"
+      tool.images.medium.should == "http://userserve-ak.last.fm/serve/64/3727739.jpg"
+      tool.images.large.should == "http://userserve-ak.last.fm/serve/126/3727739.jpg"
+      tool.images.extralarge.should == "http://userserve-ak.last.fm/serve/252/3727739.jpg"
+      tool.images.mega.should == "http://userserve-ak.last.fm/serve/500/3727739/Tool+1199177781240.jpg"
       
       similar_artists = ["A Perfect Circle", "Puscifer", "Rishloo", "ASHES dIVIDE", "Nine Inch Nails"]
 
@@ -103,7 +100,7 @@ describe LastFM::Artist do
     it "should use autocorrection" do
       stub_artist_response(method: "artist.getinfo", artist: "blof")
       stub_artist_response(method: "artist.getinfo", artist: "blof", autocorrect: 1)
-      blof = LastFM::Artist.new("blof").info!
+      blof = LastFM::Artist.find("blof")
       blof.name.should == "Bløf"
     end
   end
@@ -111,8 +108,9 @@ describe LastFM::Artist do
   describe "top tracks" do
     
     it "should be found for Tool" do
-      stub_artist_response(method: "artist.gettoptracks", artist: "tool", autocorrect: 1)
-      top_tracks = LastFM::Artist.new("tool").top_tracks
+      stub_artist_response(method: "artist.getinfo", artist: "tool", autocorrect: 1)
+      stub_artist_response(method: "artist.gettoptracks", artist: "Tool", autocorrect: 1)
+      top_tracks = LastFM::Artist.find("tool").top_tracks
       
       top_tracks.size.should == 50
       schism = top_tracks.first
@@ -131,9 +129,10 @@ describe LastFM::Artist do
     end
     
     it "should use autocorrection" do
-      stub_artist_response(method: "artist.gettoptracks", artist: "blof")
-      stub_artist_response(method: "artist.gettoptracks", artist: "blof", autocorrect: 1)
-      top_tracks = LastFM::Artist.new("blof").top_tracks
+      stub_artist_response(method: "artist.getinfo", artist: "blof", autocorrect: 1)
+      stub_artist_response(method: "artist.gettoptracks", artist: "Bløf")
+      stub_artist_response(method: "artist.gettoptracks", artist: "Bløf", autocorrect: 1)
+      top_tracks = LastFM::Artist.find("blof").top_tracks
       top_tracks.first.name.should == "Harder Dan Ik Hebben Kan"
     end
   end
@@ -141,8 +140,9 @@ describe LastFM::Artist do
   describe "events" do
     
     it "should be found for de staat" do
-      stub_artist_response(method: "artist.getevents", artist: "de staat", autocorrect: 1)
-      de_staat = LastFM::Artist.new("de staat")
+      stub_artist_response(method: "artist.getinfo", artist: "de staat", autocorrect: 1)
+      stub_artist_response(method: "artist.getevents", artist: "De Staat", autocorrect: 1)
+      de_staat = LastFM::Artist.find("de staat")
       events = de_staat.events
       
       events.size.should == 19

@@ -1,6 +1,6 @@
 module LastFM
   class Event < Hashie::Mash
-    extend LastFM::ImageReader
+    extend ImageReader
     
     class << self
       

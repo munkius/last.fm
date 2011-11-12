@@ -1,6 +1,6 @@
 module LastFM
   class User
-    extend LastFM::ImageReader
+    extend ImageReader
     include RequestHelper
     include Unimplemented
     include Errors
@@ -50,18 +50,8 @@ module LastFM
       xml = do_request(method: "user.gettopartists", user: @name)
       
       top_artists = []
-      xml.xpath("//artist").each do |artist|
-        top_artists << Artist.new(artist.at("./name").content, {
-          playcount: artist.at("./playcount").content.to_i,
-          url: artist.at("./url").content,
-          images: {
-            small: artist.at('./image[@size="small"]').content,
-            medium: artist.at('./image[@size="medium"]').content,
-            large: artist.at('./image[@size="large"]').content,
-            extralarge: artist.at('./image[@size="extralarge"]').content,
-            mega: artist.at('./image[@size="mega"]').content
-          }
-        })
+      xml.xpath("//artist").each do |a|
+        top_artists << Artist.from_xml(a)
       end
       
       @top_artists = top_artists

@@ -52,11 +52,11 @@ describe LastFM::User do
       intwine.name.should == "Intwine"
       intwine.url.should == "http://www.last.fm/music/Intwine"
       intwine.streamable.should be_false
-      intwine.images[:small].should == "http://userserve-ak.last.fm/serve/34/3350388.jpg"
-      intwine.images[:medium].should == "http://userserve-ak.last.fm/serve/64/3350388.jpg"
-      intwine.images[:large].should == "http://userserve-ak.last.fm/serve/126/3350388.jpg"
-      intwine.images[:extralarge].should == "http://userserve-ak.last.fm/serve/252/3350388.jpg"
-      intwine.images[:mega].should == "http://userserve-ak.last.fm/serve/_/3350388/Intwine+nieuw1.jpg"
+      intwine.images.small.should == "http://userserve-ak.last.fm/serve/34/3350388.jpg"
+      intwine.images.medium.should == "http://userserve-ak.last.fm/serve/64/3350388.jpg"
+      intwine.images.large.should == "http://userserve-ak.last.fm/serve/126/3350388.jpg"
+      intwine.images.extralarge.should == "http://userserve-ak.last.fm/serve/252/3350388.jpg"
+      intwine.images.mega.should == "http://userserve-ak.last.fm/serve/_/3350388/Intwine+nieuw1.jpg"
     end
   end
 end
