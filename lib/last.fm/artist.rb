@@ -4,7 +4,7 @@ module LastFM
     include Unimplemented
     
     AUTHENTICATED_METHODS = [:add_tags, :tags_by_user, :remove_tag, :share, :shout]
-    unimplemented methods: AUTHENTICATED_METHODS + [:correction, :podcast, :shouts]
+    unimplemented methods: AUTHENTICATED_METHODS + [:correction, :podcast]
 
     attr_reader :name, :listeners, :images, :match, :url, :streamable, :similar_artists, :tags
     alias_method :streamable?, :streamable
@@ -79,6 +79,10 @@ module LastFM
     
     def find_images
       find_stuff("artist.getimages", {artist: @name}, "//images/image", ArtistImage)
+    end
+    
+    def find_shouts
+      find_stuff("artist.getshouts", {artist: @name}, "//shouts/shout", Shout)
     end
     
   private

@@ -314,7 +314,28 @@ describe LastFM::Artist do
     end
     
     pending "should be possible to give a limit"
+  end
+
+  describe "shouts" do
+    before :each do
+      stub_artist_response(method: "artist.getinfo", artist: "deftones", autocorrect: 1)
+      stub_artist_response(method: "artist.getshouts", artist: "Deftones")
+      @deftones = LastFM::Artist.find("deftones")
+    end
+    
+    it "should be found for Deftones" do
+      shouts = @deftones.find_shouts
+      shouts.size.should == 50
+      shout = shouts.last
+      
+      shout.body.should == "You've Seen the Butcher doesn't sound as their typical song. Deftones playing DOOM there. rest of album is full of fillers though"
+      shout.author.should == "xdreamx19"
+      shout.date.should == DateTime.new(2011, 10, 24, 15, 53, 20)
+    end
+    
+    pending "should be possible to give a limit"
     
   end
+
 
 end
