@@ -19,7 +19,7 @@ describe LastFM::Artist do
         tool.name.should == "Tool"
         tool.listeners.should == 1332090
         tool.url.should == "http://www.last.fm/music/Tool"
-        tool.streamable.should be_true
+        tool.streamable?.should be_true
       
         tool.images.size.should == 5
         tool.images.small.should == "http://userserve-ak.last.fm/serve/34/3727739.jpg"
@@ -32,7 +32,7 @@ describe LastFM::Artist do
       it "should de-encode content" do
         tool_and_friends = @artists.select{|a| a.name == "Tool, Staind, Korn & Chevelle" }.first
         tool_and_friends.listeners.should == 310
-        tool_and_friends.streamable.should == false
+        tool_and_friends.streamable?.should == false
       end
     end
     
@@ -78,7 +78,7 @@ describe LastFM::Artist do
       tool.name.should == "Tool"
       tool.listeners.should == 1332090
       tool.url.should == "http://www.last.fm/music/Tool"
-      tool.streamable.should be_true
+      tool.streamable?.should be_true
     
       tool.images.size.should == 5
       tool.images.small.should == "http://userserve-ak.last.fm/serve/34/3727739.jpg"
@@ -194,5 +194,27 @@ describe LastFM::Artist do
       event.cancelled.should be_false
       event.tags.should == ["dutch", "singer-songwriter", "alternative"]
     end
+  end
+
+  describe "similar" do
+    before :each do
+      stub_artist_response(method: "artist.getinfo", artist: "tool", autocorrect: 1)
+      stub_artist_response(method: "artist.getsimilar", artist: "Tool")
+      @tool = LastFM::Artist.find("tool")
+    end
+    
+    it "should find similar artists" do
+      similar = @tool.find_similar_artists
+      similar.size.should == 100
+
+      a_perfect_circle = similar.first
+      a_perfect_circle.name.should == "A Perfect Circle"
+      a_perfect_circle.match.should == 1
+      a_perfect_circle.url.should == "www.last.fm/music/A+Perfect+Circle"
+      a_perfect_circle.images.large.should == "http://userserve-ak.last.fm/serve/126/139730.jpg"
+      a_perfect_circle.streamable?.should be_true
+    end
+    
+    
   end
 end

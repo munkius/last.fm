@@ -3,10 +3,11 @@ module LastFM
     include RequestHelper
     include Unimplemented
     
-    unimplemented methods: [:add_tags, :correction, :images_list, :past_events, :podcast, :similar,
+    unimplemented methods: [:add_tags, :correction, :find_images, :past_events, :podcast,
                      :user_tags, :top_albums, :top_fans, :top_tags, :remove_tag, :share, :shout]
 
-    attr_reader :name, :listeners, :images, :url, :streamable, :similar_artists, :tags
+    attr_reader :name, :listeners, :images, :match, :url, :streamable, :similar_artists, :tags
+    alias_method :streamable?, :streamable
     
     class << self
 
@@ -15,10 +16,11 @@ module LastFM
         
         options = {}
         options[:images] = ImageReader::images(xml, "./image")
-        options[:playcount] = xml.at("./playcount").content.to_i
+        options[:playcount] = xml.at("./playcount").content.to_i rescue nil
         options[:streamable] = xml.at("./streamable").content == "1"
         options[:url] = xml.at("./url").content
         
+        yield(options) if block_given?
         Artist.new(name, options)
       end
 
@@ -90,13 +92,26 @@ module LastFM
       events
     end
 
+    def find_similar_artists
+      xml = do_request(method: "artist.getsimilar", artist: @name)
+      # puts xml.to_xml(indent: 2)
+      similar = []
+      xml.xpath("//similarartists/artist").each do |a|
+        similar << Artist.from_xml(a) do |options|
+          options[:match] = a.at("./match").content.to_f
+        end
+      end
+      
+      similar
+    end
+    
   private
 
     def initialize(name, options)
       options = options.dup
       @name = name
-      @images, @listeners, @playcount, @similar_artists, @streamable, @tags, @url = 
-        options.delete(:images), options.delete(:listeners), options.delete(:playcount), options.delete(:similar_artists), options.delete(:streamable), options.delete(:tags), options.delete(:url)
+      @images, @listeners, @match, @playcount, @similar_artists, @streamable, @tags, @url = 
+        options.delete(:images), options.delete(:listeners), options.delete(:match), options.delete(:playcount), options.delete(:similar_artists), options.delete(:streamable), options.delete(:tags), options.delete(:url)
         raise "Invalid options passed: #{options.keys.join(", ")}" if options.keys.size > 0
     end
  
