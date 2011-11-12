@@ -1,6 +1,5 @@
 module LastFM
   class User
-    extend ImageReader
     include RequestHelper
     include Unimplemented
     include Errors
@@ -33,7 +32,7 @@ module LastFM
         bootstrap = user.at("./bootstrap").content.to_i
         country = user.at("./country").content        
         gender = user.at("./gender").content
-        images = images(user, "./image")
+        images = ImageReader::images(user, "./image")
         playcount = user.at("./playcount").content.to_i
         playlist_count = user.at("./playlists").content.to_i
         realname = user.at("./realname").content

@@ -22,11 +22,11 @@ describe LastFM::Artist do
         tool.streamable.should be_true
       
         tool.images.size.should == 5
-        tool.images[:small].should == "http://userserve-ak.last.fm/serve/34/3727739.jpg"
-        tool.images[:medium].should == "http://userserve-ak.last.fm/serve/64/3727739.jpg"
-        tool.images[:large].should == "http://userserve-ak.last.fm/serve/126/3727739.jpg"
-        tool.images[:extralarge].should == "http://userserve-ak.last.fm/serve/252/3727739.jpg"
-        tool.images[:mega].should == "http://userserve-ak.last.fm/serve/500/3727739/Tool+1199177781240.jpg"
+        tool.images.small.should == "http://userserve-ak.last.fm/serve/34/3727739.jpg"
+        tool.images.medium.should == "http://userserve-ak.last.fm/serve/64/3727739.jpg"
+        tool.images.large.should == "http://userserve-ak.last.fm/serve/126/3727739.jpg"
+        tool.images.extralarge.should == "http://userserve-ak.last.fm/serve/252/3727739.jpg"
+        tool.images.mega.should == "http://userserve-ak.last.fm/serve/500/3727739/Tool+1199177781240.jpg"
       end
     
       it "should de-encode content" do
@@ -70,7 +70,7 @@ describe LastFM::Artist do
     # 29 : Rate limit exceeded - Your IP has made too many requests in a short period
   end
 
-  describe "info" do
+  describe "find" do
     
     it "should be found for Tool" do
       stub_artist_response(method: "artist.getinfo", artist: "tool", autocorrect: 1)
@@ -103,6 +103,17 @@ describe LastFM::Artist do
       blof = LastFM::Artist.find("blof")
       blof.name.should == "Bløf"
     end
+    
+    it "should return nil when an artist does not exist" do
+      stub_artist_response(method: "artist.getinfo", artist: "non-existent-artist", autocorrect: 1)
+      LastFM::Artist.find("non-existent-artist").should be_nil
+    end
+    
+    it "should alias find and info" do
+      stub_artist_response(method: "artist.getinfo", artist: "tool", autocorrect: 1)
+      LastFM::Artist.find("tool").name.should == LastFM::Artist.info("tool").name
+    end
+
   end
   
   describe "top tracks" do
@@ -122,10 +133,10 @@ describe LastFM::Artist do
       schism.url.should == "http://www.last.fm/music/Tool/_/Schism"
       schism.streamable.should be_true
 
-      schism.images[:small].should == "http://userserve-ak.last.fm/serve/34s/69544646.png" 
-      schism.images[:medium].should == "http://userserve-ak.last.fm/serve/64s/69544646.png"
-      schism.images[:large].should == "http://userserve-ak.last.fm/serve/126/69544646.png"
-      schism.images[:extralarge].should == "http://userserve-ak.last.fm/serve/300x300/69544646.png"
+      schism.images.small.should == "http://userserve-ak.last.fm/serve/34s/69544646.png" 
+      schism.images.medium.should == "http://userserve-ak.last.fm/serve/64s/69544646.png"
+      schism.images.large.should == "http://userserve-ak.last.fm/serve/126/69544646.png"
+      schism.images.extralarge.should == "http://userserve-ak.last.fm/serve/300x300/69544646.png"
     end
     
     it "should use autocorrection" do

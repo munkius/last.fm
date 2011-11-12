@@ -1,6 +1,6 @@
 module LastFM
   module ImageReader
-    def images(xml, xpath)
+    def self.images(xml, xpath)
       result = Hashie::Mash.new
       
       ["small", "medium", "large", "extralarge", "mega"].each do |size|
@@ -10,7 +10,7 @@ module LastFM
       result
     end
     
-    def image(xml, xpath, size)
+    def self.image(xml, xpath, size)
       xml.at("#{xpath}[@size='#{size}']").content rescue nil
     end
   end

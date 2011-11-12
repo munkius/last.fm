@@ -1,10 +1,9 @@
 module LastFM
   class Artist
-    extend ImageReader
     include RequestHelper
     include Unimplemented
     
-    unimplemented methods: [:add_tags, :correction, :images_list, :info, :past_events, :podcast, :similar,
+    unimplemented methods: [:add_tags, :correction, :images_list, :past_events, :podcast, :similar,
                      :user_tags, :top_albums, :top_fans, :top_tags, :remove_tag, :share, :shout]
 
     attr_reader :name, :listeners, :images, :url, :streamable, :similar_artists, :tags
@@ -15,7 +14,7 @@ module LastFM
         name = xml.at("./name").content
         
         options = {}
-        options[:images] = images(xml, "./image")
+        options[:images] = ImageReader::images(xml, "./image")
         options[:playcount] = xml.at("./playcount").content.to_i
         options[:streamable] = xml.at("./streamable").content == "1"
         options[:url] = xml.at("./url").content
@@ -27,11 +26,13 @@ module LastFM
         xml = do_request(method: "artist.getinfo", artist: artistname, autocorrect: 1)
         artist = xml.at("artist")
         
+        return if artist.nil?
+        
         name = artist.at("./name").content
 
         options = {}
         options[:url] = artist.at("./url").content
-        options[:images] = images(artist, "./image")
+        options[:images] = ImageReader::images(artist, "./image")
         options[:listeners] = artist.at("./stats/listeners").content.to_i
         options[:streamable] = artist.at("./streamable").content == "1"
         options[:similar_artists] = artist.xpath("//similar/artist").map{|a| a.at("./name").content}
@@ -39,6 +40,8 @@ module LastFM
         
         Artist.new(name, options)
       end
+      
+      alias_method :info, :find
 
       def search(artist)
         result = []
@@ -48,7 +51,7 @@ module LastFM
             listeners: artist.at("./listeners").content.to_i,
             url: artist.at("./url").content,
             streamable: artist.at("./streamable").content == "1",
-            images: images(artist, "./image")
+            images: ImageReader::images(artist, "./image")
           })
         end
         result
@@ -68,12 +71,7 @@ module LastFM
           track.at("./listeners").content.to_i,
           track.at("./url").content,
           track.at("./streamable").content == "1",
-          {
-            small: (track.at('./image[@size="small"]').content rescue nil),
-            medium: (track.at('./image[@size="medium"]').content rescue nil),
-            large: (track.at('./image[@size="large"]').content rescue nil),
-            extralarge: (track.at('./image[@size="extralarge"]').content rescue nil)
-          }
+          ImageReader::images(track, "./image")
         )
       end
       

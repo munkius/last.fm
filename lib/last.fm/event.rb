@@ -1,6 +1,5 @@
 module LastFM
   class Event < Hashie::Mash
-    extend ImageReader
     
     class << self
       
@@ -24,10 +23,10 @@ module LastFM
         event.venue.url = xml.at("./venue/url").content
         event.venue.website = xml.at("./venue/website").content
         event.venue.phonenumber = xml.at("./venue/phonenumber").content
-        event.venue.images = images(xml, "./venue/image")
+        event.venue.images = ImageReader::images(xml, "./venue/image")
         event.start_date = DateTime.parse(xml.at("./startDate").content)
         event.description = xml.at("./description").content
-        event.images = images(xml, "./image")
+        event.images = ImageReader::images(xml, "./image")
         event.attendance = xml.at("./attendance").content.to_i
         event.reviews = xml.at("./reviews").content.to_i
         event.tag = xml.at("./tag").content
