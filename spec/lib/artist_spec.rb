@@ -234,4 +234,23 @@ describe LastFM::Artist do
       # the rest is tested through the events spec
     end
   end
+  
+  describe "top fans" do
+    before :each do
+      stub_artist_response(method: "artist.getinfo", artist: "deftones", autocorrect: 1)
+      stub_artist_response(method: "artist.gettopfans", artist: "Deftones")
+      @deftones = LastFM::Artist.find("deftones")
+    end
+    
+    it "should be found for Deftones" do
+      top_fans = @deftones.find_top_fans
+      top_fans.size.should == 50
+      kyyn = top_fans.first
+      kyyn.name.should == "Kyyn"
+      kyyn.realname.should == ""
+      kyyn.url.should == "http://www.last.fm/user/Kyyn"
+      kyyn.weight.should == 300124992
+    end
+  end
+
 end

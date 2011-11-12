@@ -6,7 +6,7 @@ module LastFM
     
     # private_class_method :new
     
-    attr_reader :id, :name, :age, :bootstrap, :country, :gender, :images, :playcount, :playlist_count, :realname, :registered, :subscriber, :type, :url
+    attr_reader :id, :name, :age, :bootstrap, :country, :gender, :images, :playcount, :playlist_count, :realname, :registered, :subscriber, :type, :url, :weight
     
     unimplemented methods: [:artist_tracks, :banned_tracks, :events, :friends, :loved_tracks, :neighbours,
                             :past_events, :personal_tags, :playlists, :recent_stations, :recent_tracks,
@@ -17,31 +17,35 @@ module LastFM
     class << self
       def find(username)
         xml = do_request(method: "user.getinfo", user: username)
-        self.from_xml(xml)
+        user = xml.at("//user")
+        self.from_xml(user) do |options|
+          options[:id] = user.at("./id").content.to_i
+          options[:age] = user.at("./age").content.to_i
+          options[:bootstrap] = user.at("./bootstrap").content.to_i
+          options[:country] = user.at("./country").content        
+          options[:gender] = user.at("./gender").content
+          options[:playcount] = user.at("./playcount").content.to_i
+          options[:playlist_count] = user.at("./playlists").content.to_i
+          options[:registered] = DateTime.parse(user.at("./registered").content)
+          options[:subscriber] = user.at("./subscriber").content == "1"
+          options[:type] = user.at("./type").content
+        end
       end
       alias_method :info, :find
       
-      def from_xml(xml)
-        user = xml.at("//user")
-        
+      def from_xml(user)
         return if user.nil?
         
-        id = user.at("./id").content.to_i
         name = user.at("./name").content
-        age = user.at("./age").content.to_i
-        bootstrap = user.at("./bootstrap").content.to_i
-        country = user.at("./country").content        
-        gender = user.at("./gender").content
-        images = ImageReader::images(user, "./image")
-        playcount = user.at("./playcount").content.to_i
-        playlist_count = user.at("./playlists").content.to_i
-        realname = user.at("./realname").content
-        registered = DateTime.parse(user.at("./registered").content)
-        subscriber = user.at("./subscriber").content == "1"
-        type = user.at("./type").content
-        url = user.at("./url").content
+        
+        options = {}
+        options[:images] = ImageReader::images(user, "./image")
+        options[:realname] = user.at("./realname").content
+        options[:url] = user.at("./url").content
 
-        User.new(id, name, age, bootstrap, country, gender, images, playcount, playlist_count, realname, registered, subscriber, type, url)
+        yield(options) if block_given?
+        
+        User.new(name, options)
       end
     end
     
@@ -58,9 +62,12 @@ module LastFM
     
   private
 
-    def initialize(id, name, age, bootstrap, country, gender, images, playcount, playlist_count, realname, registered, subscriber, type, url)
-      @id, @name, @age, @bootstrap, @country, @gender, @images, @playcount, @playlist_count, @realname, @registered, @subscriber, @type, @url =
-        id, name, age, bootstrap, country, gender, images, playcount, playlist_count, realname, registered, subscriber, type, url
+    def initialize(name, options)
+      @name = name
+      @id, @age, @bootstrap, @country, @gender, @images, @playcount, @playlist_count, @realname, @registered, @subscriber, @type, @url, @weight =
+        options.delete(:id), options.delete(:age), options.delete(:bootstrap), options.delete(:country), options.delete(:gender), options.delete(:images), options.delete(:playcount), options.delete(:playlist_count), options.delete(:realname), options.delete(:registered), options.delete(:subscriber), options.delete(:type), options.delete(:url), options.delete(:weight)
+
+      raise "Invalid options passed: #{options.keys.join(", ")}" if options.keys.size > 0
     end
   end
 end

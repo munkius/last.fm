@@ -4,7 +4,7 @@ module LastFM
     include Unimplemented
     
     unimplemented methods: [:add_tags, :correction, :find_images, :podcast,
-                     :user_tags, :top_albums, :top_fans, :top_tags, :remove_tag, :share, :shout]
+                     :user_tags, :top_albums, :top_tags, :remove_tag, :share, :shout]
 
     attr_reader :name, :listeners, :images, :match, :url, :streamable, :similar_artists, :tags
     alias_method :streamable?, :streamable
@@ -104,6 +104,18 @@ module LastFM
       end
       
       past_events
+    end
+    
+    def find_top_fans
+      xml = do_request(method: "artist.gettopfans", artist: @name)
+      top_fans = []
+      xml.xpath("//topfans/user").each do |u|
+        top_fans << User.from_xml(u) do |options|
+          options[:weight] = u.at("./weight").content.to_i
+        end
+      end
+      
+      top_fans
     end
     
   private
