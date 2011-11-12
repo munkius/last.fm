@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+<user>
+    <name>Munkius</name>
+    <realname></realname>
+    <image size="small">http://userserve-ak.last.fm/serve/34/2487647.jpg</image>
+    <image size="medium">http://userserve-ak.last.fm/serve/64/2487647.jpg</image>
+    <image size="large">http://userserve-ak.last.fm/serve/126/2487647.jpg</image>
+    <image size="extralarge">http://userserve-ak.last.fm/serve/252/2487647.jpg</image>
+    <url>http://www.last.fm/user/Munkius</url>
+        
+	<id>4724243</id>
+		
+    <country>NL</country>
+    <age>32</age>
+    <gender>m</gender>
+    <subscriber>0</subscriber>
+    <playcount>47893</playcount>
+    <playlists>0</playlists>
+    <bootstrap>0</bootstrap>
+    <registered unixtime="1158996105">2006-09-23 07:21</registered>
+	<type>user</type>
+    
+</user></lfm>
