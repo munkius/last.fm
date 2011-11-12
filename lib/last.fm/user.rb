@@ -15,10 +15,8 @@ module LastFM
                             :weekly_track_chart, :shout]
 
     class << self
-      def find(username)
-        xml = do_request(method: "user.getinfo", user: username)
-        user = xml.at("//user")
-        self.from_xml(user) do |options|
+      def find(user)
+        find_single("user.getinfo", {user: user}, "/lfm/user", User) do |user, options|
           options[:id] = user.at("./id").content.to_i
           options[:age] = user.at("./age").content.to_i
           options[:bootstrap] = user.at("./bootstrap").content.to_i
@@ -33,31 +31,24 @@ module LastFM
       end
       alias_method :info, :find
       
-      def from_xml(user)
-        return if user.nil?
+      def from_xml(xml)
+        return if xml.nil?
         
-        name = user.at("./name").content
+        name = xml.at("./name").content
         
         options = {}
-        options[:images] = ImageReader::images(user, "./image")
-        options[:realname] = user.at("./realname").content
-        options[:url] = user.at("./url").content
+        options[:images] = ImageReader::images(xml, "./image")
+        options[:realname] = xml.at("./realname").content
+        options[:url] = xml.at("./url").content
 
-        yield(options) if block_given?
+        yield(xml, options) if block_given?
         
         User.new(name, options)
       end
     end
     
     def find_top_artists
-      xml = do_request(method: "user.gettopartists", user: @name)
-      
-      top_artists = []
-      xml.xpath("//artist").each do |a|
-        top_artists << Artist.from_xml(a)
-      end
-      
-      @top_artists = top_artists
+      find_stuff("user.gettopartists", {user: @name}, "//artist", Artist)
     end
     
   private

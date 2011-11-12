@@ -16,7 +16,7 @@ module LastFM
         
         options[:images] = ImageReader::images(xml, "./image")
         
-        yield(options) if block_given?
+        yield(xml, options) if block_given?
         
         self.new(name, options)
       end

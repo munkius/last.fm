@@ -20,121 +20,65 @@ module LastFM
         options[:streamable] = xml.at("./streamable").content == "1"
         options[:url] = xml.at("./url").content
         
-        yield(options) if block_given?
+        yield(xml, options) if block_given?
         Artist.new(name, options)
       end
 
-      def find(artistname)
-        xml = do_request(method: "artist.getinfo", artist: artistname, autocorrect: 1)
-        artist = xml.at("artist")
-        return if artist.nil?
-        
-        self.from_xml(artist) do |options|
+      def find(artist)
+        find_single("artist.getinfo", {artist: artist, autocorrect: 1}, "/lfm/artist", Artist) do |artist, options|
           options[:listeners] = artist.at("./stats/listeners").content.to_i
           options[:similar_artists] = artist.xpath("//similar/artist").map{|a| a.at("./name").content}
           options[:tags] = artist.xpath("//tags/tag").map{|t| t.at("./name").content}
         end
-        
       end
       
       alias_method :info, :find
 
       def search(artist)
-        result = []
-        xml = do_request(method: "artist.search", artist: artist)
-        xml.xpath("//artist").each do |artist|
-          result << self.from_xml(artist) do |options|
-            options[:listeners] = artist.at("./listeners").content.to_i
-          end
+        find_stuff("artist.search", {artist: artist}, "//artist", Artist) do |artist, options|
+          options[:listeners] = artist.at("./listeners").content.to_i
         end
-        result
       end
     end
 
     def find_top_tracks
-      xml = do_request(method: "artist.gettoptracks", artist: @name, autocorrect: 1)
-      
-      top_tracks = []
-      xml.xpath("//track").each do |t|
-        top_tracks << Track.from_xml(t)
-      end
-      
-      top_tracks
+      find_stuff("artist.gettoptracks", {artist: @name, autocorrect: 1}, "//track", Track)
     end
     
     def find_events
-      xml = do_request(method: "artist.getevents", artist: @name, autocorrect: 1)
-      xml.remove_namespaces!
-
-      events = []
-      xml.xpath("//event").each do |e|
-        events << Event.from_xml(e)
-      end
-      
-      events
+      find_stuff("artist.getevents", {artist: @name, autocorrect: 1}, "//event", Event)
     end
 
     def find_similar_artists
-      xml = do_request(method: "artist.getsimilar", artist: @name)
-      similar = []
-      xml.xpath("//similarartists/artist").each do |a|
-        similar << Artist.from_xml(a) do |options|
-          options[:match] = a.at("./match").content.to_f
-        end
+      find_stuff("artist.getsimilar", {artist: @name}, "//similarartists/artist", Artist) do |artist, options|
+        options[:match] = artist.at("./match").content.to_f
       end
-      
-      similar
     end
     
     def find_past_events
-      xml = do_request(method: "artist.getpastevents", artist: @name)
-      xml.remove_namespaces!
-      past_events = []
-      xml.xpath("//events/event").each do |e|
-        past_events << Event.from_xml(e)
-      end
-      
-      past_events
+      find_stuff("artist.getpastevents", {artist: @name}, "//events/event", Event)
     end
     
     def find_top_fans
-      xml = do_request(method: "artist.gettopfans", artist: @name)
-      top_fans = []
-      xml.xpath("//topfans/user").each do |u|
-        top_fans << User.from_xml(u) do |options|
-          options[:weight] = u.at("./weight").content.to_i
-        end
+      find_stuff("artist.gettopfans", {artist: @name}, "//topfans/user", User) do |user, options|
+        options[:weight] = user.at("./weight").content.to_i
       end
-      
-      top_fans
     end
     
     def find_top_albums
-      xml = do_request(method: "artist.gettopalbums", artist: @name)
-      top_albums = []
-      xml.xpath("//topalbums/album").each do |a|
-        top_albums << Album.from_xml(a) do |options|
-          options[:rank] = a.attributes["rank"].value.to_i
-        end
+      find_stuff("artist.gettopalbums", {artist: @name}, "//topalbums/album", Album) do |album, options|
+        options[:rank] = album.attributes["rank"].value.to_i
       end
-      
-      top_albums
     end
     
     def find_top_tags
-      xml = do_request(method: "artist.gettoptags", artist: @name)
-      top_tags = []
-      xml.xpath("//toptags/tag").each do |a|
-        top_tags << Tag.from_xml(a) do |options|
-          options[:rank] = a.attributes["rank"].value.to_i
-        end
+      find_stuff("artist.gettoptags", {artist: @name}, "//toptags/tag", Tag) do |tag, options|
+        options[:rank] = tag.attributes["rank"].value.to_i
       end
-      
-      top_tags
     end
     
   private
-
+  
     def initialize(name, options)
       options = options.dup
       @name = name
