@@ -253,4 +253,26 @@ describe LastFM::Artist do
     end
   end
 
+  describe "top albums" do
+    before :each do
+      stub_artist_response(method: "artist.getinfo", artist: "deftones", autocorrect: 1)
+      stub_artist_response(method: "artist.gettopalbums", artist: "Deftones")
+      @deftones = LastFM::Artist.find("deftones")
+    end
+    
+    it "should be found for Deftones" do
+      top_albums = @deftones.find_top_albums
+      top_albums.size.should == 50
+      deftones_album = top_albums.first
+
+      deftones_album.rank.should == 1
+      deftones_album.name.should == "Deftones"
+      deftones_album.playcount.should == 489670
+      deftones_album.url.should == "http://www.last.fm/music/Deftones/Deftones"
+      deftones_album.artist.name.should == "Deftones"
+      deftones_album.artist.url.should == "http://www.last.fm/music/Deftones"
+      deftones_album.images.large.should == "http://userserve-ak.last.fm/serve/126/61736359.png"
+    end
+  end
+
 end
