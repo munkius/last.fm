@@ -55,17 +55,8 @@ module LastFM
       xml = do_request(method: "artist.gettoptracks", artist: @name, autocorrect: 1)
       
       top_tracks = []
-      xml.xpath("//track").each do |track|
-        top_tracks << Track.new(
-          track.attributes["rank"].value.to_i,
-          track.at("./name").content,
-          track.at("./duration").content.to_i,
-          track.at("./playcount").content.to_i,
-          track.at("./listeners").content.to_i,
-          track.at("./url").content,
-          track.at("./streamable").content == "1",
-          ImageReader::images(track, "./image")
-        )
+      xml.xpath("//track").each do |t|
+        top_tracks << Track.from_xml(t)
       end
       
       top_tracks
@@ -151,7 +142,6 @@ module LastFM
         options.delete(:images), options.delete(:listeners), options.delete(:match), options.delete(:playcount), options.delete(:similar_artists), options.delete(:streamable), options.delete(:tags), options.delete(:url)
         raise "Invalid options passed: #{options.keys.join(", ")}" if options.keys.size > 0
     end
- 
-    Track = Struct::new(:rank, :name, :duration, :playcount, :listeners, :url, :streamable, :images)
+    
   end
 end
