@@ -291,4 +291,30 @@ describe LastFM::Artist do
     end
   end
 
+  describe "images" do
+    before :each do
+      stub_artist_response(method: "artist.getinfo", artist: "deftones", autocorrect: 1)
+      stub_artist_response(method: "artist.getimages", artist: "Deftones")
+      @deftones = LastFM::Artist.find("deftones")
+    end
+    
+    it "should be found for Deftones" do
+      images = @deftones.find_images
+      images.size.should == 50
+      image = images.first
+      
+      image.title.should == "Deftones - Diamond Eyes 2010"
+      image.url.should == "http://www.last.fm/music/Deftones/+images/44107199"
+      image.date_added.should == DateTime.new(2010, 3, 26, 23, 48, 13)
+      image.format.should == "jpg"
+      image.sizes.original.should == "http://userserve-ak.last.fm/serve/_/44107199/Deftones+++Diamond+Eyes+2010.jpg"
+      image.sizes.large.should == "http://userserve-ak.last.fm/serve/126/44107199.jpg"
+      image.votes.thumbsup.should == 190
+      image.votes.thumbsdown.should == 64
+    end
+    
+    pending "should be possible to give a limit"
+    
+  end
+
 end
