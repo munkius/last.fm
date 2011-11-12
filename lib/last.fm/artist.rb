@@ -27,20 +27,14 @@ module LastFM
       def find(artistname)
         xml = do_request(method: "artist.getinfo", artist: artistname, autocorrect: 1)
         artist = xml.at("artist")
-        
         return if artist.nil?
         
-        name = artist.at("./name").content
-
-        options = {}
-        options[:url] = artist.at("./url").content
-        options[:images] = ImageReader::images(artist, "./image")
-        options[:listeners] = artist.at("./stats/listeners").content.to_i
-        options[:streamable] = artist.at("./streamable").content == "1"
-        options[:similar_artists] = artist.xpath("//similar/artist").map{|a| a.at("./name").content}
-        options[:tags] = artist.xpath("//tags/tag").map{|t| t.at("./name").content}
+        self.from_xml(artist) do |options|
+          options[:listeners] = artist.at("./stats/listeners").content.to_i
+          options[:similar_artists] = artist.xpath("//similar/artist").map{|a| a.at("./name").content}
+          options[:tags] = artist.xpath("//tags/tag").map{|t| t.at("./name").content}
+        end
         
-        Artist.new(name, options)
       end
       
       alias_method :info, :find
@@ -49,12 +43,9 @@ module LastFM
         result = []
         xml = do_request(method: "artist.search", artist: artist)
         xml.xpath("//artist").each do |artist|
-          result << Artist.new(artist.at("./name").content, {
-            listeners: artist.at("./listeners").content.to_i,
-            url: artist.at("./url").content,
-            streamable: artist.at("./streamable").content == "1",
-            images: ImageReader::images(artist, "./image")
-          })
+          result << self.from_xml(artist) do |options|
+            options[:listeners] = artist.at("./listeners").content.to_i
+          end
         end
         result
       end
