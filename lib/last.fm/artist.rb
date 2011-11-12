@@ -3,8 +3,8 @@ module LastFM
     include RequestHelper
     include Unimplemented
     
-    unimplemented methods: [:add_tags, :correction, :find_images, :podcast,
-                     :user_tags, :remove_tag, :share, :shout]
+    AUTHENTICATED_METHODS = [:add_tags, :tags_by_user, :remove_tag, :share, :shout]
+    unimplemented methods: AUTHENTICATED_METHODS + [:correction, :find_images, :podcast, :shouts]
 
     attr_reader :name, :listeners, :images, :match, :url, :streamable, :similar_artists, :tags
     alias_method :streamable?, :streamable

@@ -4,15 +4,14 @@ module LastFM
     include Unimplemented
     include Errors
     
-    # private_class_method :new
-    
     attr_reader :id, :name, :age, :bootstrap, :country, :gender, :images, :playcount, :playlist_count, :realname, :registered, :subscriber, :type, :url, :weight
     
-    unimplemented methods: [:artist_tracks, :banned_tracks, :events, :friends, :loved_tracks, :neighbours,
+    AUTHENTICATED_METHODS = [:shout]
+    unimplemented methods: AUTHENTICATED_METHODS + [:artist_tracks, :banned_tracks, :events, :friends, :loved_tracks, :neighbours,
                             :past_events, :personal_tags, :playlists, :recent_stations, :recent_tracks,
                             :recommended_artists, :recommended_events, :shouts, :top_albums, :top_tags,
                             :top_tracks, :weekly_album_chart, :weekly_artist_chart, :weekly_chart_list,
-                            :weekly_track_chart, :shout]
+                            :weekly_track_chart]
 
     class << self
       def find(user)
