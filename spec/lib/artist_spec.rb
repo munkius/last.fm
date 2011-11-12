@@ -121,7 +121,7 @@ describe LastFM::Artist do
     it "should be found for Tool" do
       stub_artist_response(method: "artist.getinfo", artist: "tool", autocorrect: 1)
       stub_artist_response(method: "artist.gettoptracks", artist: "Tool", autocorrect: 1)
-      top_tracks = LastFM::Artist.find("tool").top_tracks
+      top_tracks = LastFM::Artist.find("tool").find_top_tracks
       
       top_tracks.size.should == 50
       schism = top_tracks.first
@@ -143,7 +143,7 @@ describe LastFM::Artist do
       stub_artist_response(method: "artist.getinfo", artist: "blof", autocorrect: 1)
       stub_artist_response(method: "artist.gettoptracks", artist: "Bløf")
       stub_artist_response(method: "artist.gettoptracks", artist: "Bløf", autocorrect: 1)
-      top_tracks = LastFM::Artist.find("blof").top_tracks
+      top_tracks = LastFM::Artist.find("blof").find_top_tracks
       top_tracks.first.name.should == "Harder Dan Ik Hebben Kan"
     end
   end
@@ -154,7 +154,7 @@ describe LastFM::Artist do
       stub_artist_response(method: "artist.getinfo", artist: "de staat", autocorrect: 1)
       stub_artist_response(method: "artist.getevents", artist: "De Staat", autocorrect: 1)
       de_staat = LastFM::Artist.find("de staat")
-      events = de_staat.events
+      events = de_staat.find_events
       
       events.size.should == 19
       event = events.first

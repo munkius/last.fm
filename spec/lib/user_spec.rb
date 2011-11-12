@@ -44,7 +44,7 @@ describe LastFM::User do
       stub_user_response(method: "user.getinfo", user: "munkius")
       stub_user_response(method: "user.gettopartists", user: "Munkius")
 
-      top_artists = LastFM::User.find("munkius").top_artists
+      top_artists = LastFM::User.find("munkius").find_top_artists
       top_artists.size.should == 50
       intwine = top_artists.first
     

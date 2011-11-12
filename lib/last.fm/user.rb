@@ -45,7 +45,7 @@ module LastFM
       end
     end
     
-    def top_artists
+    def find_top_artists
       xml = do_request(method: "user.gettopartists", user: @name)
       
       top_artists = []

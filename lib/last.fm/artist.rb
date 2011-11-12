@@ -51,7 +51,7 @@ module LastFM
       end
     end
 
-    def top_tracks
+    def find_top_tracks
       xml = do_request(method: "artist.gettoptracks", artist: @name, autocorrect: 1)
       
       top_tracks = []
@@ -71,7 +71,7 @@ module LastFM
       top_tracks
     end
     
-    def events
+    def find_events
       xml = do_request(method: "artist.getevents", artist: @name, autocorrect: 1)
       xml.remove_namespaces!
 
