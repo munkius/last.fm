@@ -1,6 +1,5 @@
 require 'nokogiri'
 require 'open-uri'
-require_relative 'errors'
 
 module LastFM
   module RequestHelper

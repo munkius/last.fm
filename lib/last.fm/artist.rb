@@ -1,6 +1,3 @@
-require_relative 'request_helper'
-require_relative 'unimplemented'
-
 module LastFM
   class Artist
     include RequestHelper
@@ -25,16 +22,16 @@ module LastFM
         result = []
         xml = do_request(method: "artist.search", artist: artist)
         xml.xpath("//artist").each do |artist|
-          result << Artist.new(artist.at("name").content, {
-            listeners: artist.at("listeners").content.to_i,
-            url: artist.at("url").content,
-            streamable: artist.at("streamable").content == "1",
+          result << Artist.new(artist.at("./name").content, {
+            listeners: artist.at("./listeners").content.to_i,
+            url: artist.at("./url").content,
+            streamable: artist.at("./streamable").content == "1",
             images: {
-              small: artist.at('image[@size="small"]').content,
-              medium: artist.at('image[@size="medium"]').content,
-              large: artist.at('image[@size="large"]').content,
-              extralarge: artist.at('image[@size="extralarge"]').content,
-              mega: artist.at('image[@size="mega"]').content
+              small: artist.at('./image[@size="small"]').content,
+              medium: artist.at('./image[@size="medium"]').content,
+              large: artist.at('./image[@size="large"]').content,
+              extralarge: artist.at('./image[@size="extralarge"]').content,
+              mega: artist.at('./image[@size="mega"]').content
             }
           })
         end
@@ -45,19 +42,19 @@ module LastFM
     def info!
       xml = do_request(method: "artist.getinfo", artist: @name, autocorrect: 1)
       artist = xml.at("artist")
-      @name = artist.at("name").content
-      @url = artist.at("url").content
+      @name = artist.at("./name").content
+      @url = artist.at("./url").content
       @images = {
-        small: artist.at('image[@size="small"]').content,
-        medium: artist.at('image[@size="medium"]').content,
-        large: artist.at('image[@size="large"]').content,
-        extralarge: artist.at('image[@size="extralarge"]').content,
-        mega: artist.at('image[@size="mega"]').content
+        small: artist.at('./image[@size="small"]').content,
+        medium: artist.at('./image[@size="medium"]').content,
+        large: artist.at('./image[@size="large"]').content,
+        extralarge: artist.at('./image[@size="extralarge"]').content,
+        mega: artist.at('./image[@size="mega"]').content
       }
-      @listeners = artist.at("listeners").content.to_i
-      @streamable = artist.at("streamable").content == "1"
-      @similar_artists = artist.xpath("//similar/artist").map{|a| a.at("name").content}
-      @tags = artist.xpath("//tags/tag").map{|t| t.at("name").content}
+      @listeners = artist.at("./stats/listeners").content.to_i
+      @streamable = artist.at("./streamable").content == "1"
+      @similar_artists = artist.xpath("//similar/artist").map{|a| a.at("./name").content}
+      @tags = artist.xpath("//tags/tag").map{|t| t.at("./name").content}
       self
     end
 
@@ -68,17 +65,17 @@ module LastFM
       xml.xpath("//track").each do |track|
         top_tracks << Track.new(
           track.attributes["rank"].value.to_i,
-          track.at("name").content,
-          track.at("duration").content.to_i,
-          track.at("playcount").content.to_i,
-          track.at("listeners").content.to_i,
-          track.at("url").content,
-          track.at("streamable").content == "1",
+          track.at("./name").content,
+          track.at("./duration").content.to_i,
+          track.at("./playcount").content.to_i,
+          track.at("./listeners").content.to_i,
+          track.at("./url").content,
+          track.at("./streamable").content == "1",
           {
-            small: (track.at('image[@size="small"]').content rescue nil),
-            medium: (track.at('image[@size="medium"]').content rescue nil),
-            large: (track.at('image[@size="large"]').content rescue nil),
-            extralarge: (track.at('image[@size="extralarge"]').content rescue nil)
+            small: (track.at('./image[@size="small"]').content rescue nil),
+            medium: (track.at('./image[@size="medium"]').content rescue nil),
+            large: (track.at('./image[@size="large"]').content rescue nil),
+            extralarge: (track.at('./image[@size="extralarge"]').content rescue nil)
           }
         )
       end

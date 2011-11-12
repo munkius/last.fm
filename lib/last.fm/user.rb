@@ -19,15 +19,15 @@ module LastFM
       
       top_artists = []
       xml.xpath("//artist").each do |artist|
-        top_artists << Artist.new(artist.at("name").content, {
-          playcount: artist.at("playcount").content.to_i,
-          url: artist.at("url").content,
+        top_artists << Artist.new(artist.at("./name").content, {
+          playcount: artist.at("./playcount").content.to_i,
+          url: artist.at("./url").content,
           images: {
-            small: artist.at('image[@size="small"]').content,
-            medium: artist.at('image[@size="medium"]').content,
-            large: artist.at('image[@size="large"]').content,
-            extralarge: artist.at('image[@size="extralarge"]').content,
-            mega: artist.at('image[@size="mega"]').content
+            small: artist.at('./image[@size="small"]').content,
+            medium: artist.at('./image[@size="medium"]').content,
+            large: artist.at('./image[@size="large"]').content,
+            extralarge: artist.at('./image[@size="extralarge"]').content,
+            mega: artist.at('./image[@size="mega"]').content
           }
         })
       end

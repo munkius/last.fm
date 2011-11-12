@@ -1,5 +1,6 @@
 module LastFM
   class Event < Hashie::Mash
+    extend LastFM::ImageReader
     
     class << self
       
@@ -23,26 +24,15 @@ module LastFM
         event.venue.url = xml.at("./venue/url").content
         event.venue.website = xml.at("./venue/website").content
         event.venue.phonenumber = xml.at("./venue/phonenumber").content
-        event.venue.images = Hashie::Mash.new
-        event.venue.images.small = xml.at("./venue/image[@size='small']").content
-        event.venue.images.medium = xml.at("./venue/image[@size='medium']").content
-        event.venue.images.large = xml.at("./venue/image[@size='large']").content
-        event.venue.images.extralarge = xml.at("./venue/image[@size='extralarge']").content
-        event.venue.images.mega = xml.at("./venue/image[@size='mega']").content
+        event.venue.images = images(xml, "./venue/image")
         event.start_date = DateTime.parse(xml.at("./startDate").content)
         event.description = xml.at("./description").content
-        event.images = Hashie::Mash.new
-        event.images.small = xml.at("./image[@size='small']").content
-        event.images.medium = xml.at("./image[@size='medium']").content
-        event.images.large = xml.at("./image[@size='large']").content
-        event.images.extralarge = xml.at("./image[@size='extralarge']").content
-        # TODO: event.images.mega = xml.at("./image[@size='mega']").content
+        event.images = images(xml, "./image")
         event.attendance = xml.at("./attendance").content.to_i
         event.reviews = xml.at("./reviews").content.to_i
         event.tag = xml.at("./tag").content
         event.url = xml.at("./url").content
         event.website = xml.at("./website").content
-        
         # # TODO: event.tickets.should == ""
         event.cancelled = xml.at("./cancelled").content == "1"
         event.tags = xml.xpath("./tags/tag").map{|t| t.content }
