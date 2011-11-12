@@ -3,7 +3,7 @@ module LastFM
     include RequestHelper
     include Unimplemented
     
-    unimplemented methods: [:add_tags, :correction, :find_images, :past_events, :podcast,
+    unimplemented methods: [:add_tags, :correction, :find_images, :podcast,
                      :user_tags, :top_albums, :top_fans, :top_tags, :remove_tag, :share, :shout]
 
     attr_reader :name, :listeners, :images, :match, :url, :streamable, :similar_artists, :tags
@@ -85,7 +85,6 @@ module LastFM
 
     def find_similar_artists
       xml = do_request(method: "artist.getsimilar", artist: @name)
-      # puts xml.to_xml(indent: 2)
       similar = []
       xml.xpath("//similarartists/artist").each do |a|
         similar << Artist.from_xml(a) do |options|
@@ -94,6 +93,17 @@ module LastFM
       end
       
       similar
+    end
+    
+    def find_past_events
+      xml = do_request(method: "artist.getpastevents", artist: @name)
+      xml.remove_namespaces!
+      past_events = []
+      xml.xpath("//events/event").each do |e|
+        past_events << Event.from_xml(e)
+      end
+      
+      past_events
     end
     
   private

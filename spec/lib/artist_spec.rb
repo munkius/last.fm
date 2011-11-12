@@ -217,4 +217,21 @@ describe LastFM::Artist do
     
     
   end
+
+  describe "past events" do
+    before :each do
+      stub_artist_response(method: "artist.getinfo", artist: "deftones", autocorrect: 1)
+      stub_artist_response(method: "artist.getpastevents", artist: "Deftones")
+      @deftones = LastFM::Artist.find("deftones")
+    end
+    
+    it "should be found for Deftones" do
+      past_events = @deftones.find_past_events
+      past_events.size.should == 50
+      paradiso_event = past_events.select{|e| e.venue.name == "Paradiso"}.first
+      paradiso_event.artists.should == ["Deftones", "Animals As Leaders"]
+      paradiso_event.attendance.should == 149
+      # the rest is tested through the events spec
+    end
+  end
 end
