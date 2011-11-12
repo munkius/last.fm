@@ -275,4 +275,20 @@ describe LastFM::Artist do
     end
   end
 
+  describe "top tags" do
+    before :each do
+      stub_artist_response(method: "artist.getinfo", artist: "deftones", autocorrect: 1)
+      stub_artist_response(method: "artist.gettoptags", artist: "Deftones")
+      @deftones = LastFM::Artist.find("deftones")
+    end
+    
+    it "should be found for Deftones" do
+      top_tags = @deftones.find_top_tags
+      top_tags.size.should == 100
+      top_tag = top_tags.first
+      top_tag.name.should == "metal"
+      top_tag.url.should == "http://www.last.fm/tag/metal"
+    end
+  end
+
 end
