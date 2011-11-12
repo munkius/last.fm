@@ -1,0 +1,959 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+<events artist="De Staat" festivalsonly="0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" page="1" perPage="50" totalPages="1" total="19">
+    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3110217</id>
+  <title>De Staat</title>
+  <artists>
+    <artist>De Staat</artist>
+    <artist>Ulysses Storm</artist>
+    <headliner>De Staat</headliner>
+  </artists>
+    <venue>
+    <id>8777933</id>
+    <name>Old Blue Last</name>
+    <location>
+      <city>London</city>
+      <country>United Kingdom</country>
+      <street>38 Great Eastern Street</street>
+      <postalcode>EC2A 3ES</postalcode>
+      <geo:point>
+         <geo:lat>51.524306</geo:lat>
+         <geo:long>-0.079993</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8777933+Old+Blue+Last</url>
+    <website>http://theOldBlueLast.com/listings</website>
+    <phonenumber>+44-(0)20-7739 7033</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/2779207.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/2779207.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/2779207.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/2779207.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/2779207/Old+Blue+Last+blue.jpg</image>
+  </venue>    <startDate>Tue, 08 Nov 2011 20:00:00</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/16449437.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/16449437.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/16449437.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/16449437.jpg</image>
+  <attendance>1</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3110217</tag>    
+  <url>http://www.last.fm/event/3110217+De+Staat+at+Old+Blue+Last+on+8+November+2011</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>dutch</tag>
+      <tag>singer-songwriter</tag>
+      <tag>alternative</tag>
+    </tags>
+
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>2083381</id>
+  <title>De Staat</title>
+  <artists>
+    <artist>De Staat</artist>
+    <artist>Roosbeef</artist>
+    <artist>Lyenn</artist>
+    <headliner>De Staat</headliner>
+  </artists>
+    <venue>
+    <id>8783316</id>
+    <name>KultuurKaffee</name>
+    <location>
+      <city>Brussels</city>
+      <country>Belgium</country>
+      <street>Pleinlaan, 2</street>
+      <postalcode>1050</postalcode>
+      <geo:point>
+         <geo:lat>50.822532</geo:lat>
+         <geo:long>4.391098</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8783316+KultuurKaffee</url>
+    <website>http://www.kultuurkaffee.be</website>
+    <phonenumber></phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/564113.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/564113.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/564113.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/564113.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/500/564113/KultuurKaffee.jpg</image>
+  </venue>    <startDate>Thu, 17 Nov 2011 21:00:00</startDate>
+  <description><![CDATA[<div class="bbcode">Free entrance</div>]]></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/16449437.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/16449437.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/16449437.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/16449437.jpg</image>
+  <attendance>5</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=2083381</tag>    
+  <url>http://www.last.fm/event/2083381+De+Staat+at+KultuurKaffee+on+17+November+2011</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>dutch</tag>
+      <tag>singer-songwriter</tag>
+      <tag>alternative</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>1997349</id>
+  <title>De Staat</title>
+  <artists>
+    <artist>De Staat</artist>
+    <artist>pacmen</artist>
+    <headliner>De Staat</headliner>
+  </artists>
+    <venue>
+    <id>8782715</id>
+    <name>Kulturladen</name>
+    <location>
+      <city>Konstanz</city>
+      <country>Germany</country>
+      <street>Joseph-Belli-Weg 5</street>
+      <postalcode>78467</postalcode>
+      <geo:point>
+         <geo:lat>47.67896</geo:lat>
+         <geo:long>9.1629</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8782715+Kulturladen</url>
+    <website>http://www.kulturladen.de</website>
+    <phonenumber>+44-(0)7531-52954</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/4491395.gif</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/4491395.gif</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/4491395.gif</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/4491395.gif</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/4491395/Kulturladen+kula_logo.gif</image>
+  </venue>    <startDate>Fri, 18 Nov 2011 20:30:00</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/16449437.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/16449437.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/16449437.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/16449437.jpg</image>
+  <attendance>8</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=1997349</tag>    
+  <url>http://www.last.fm/event/1997349+De+Staat+at+Kulturladen+on+18+November+2011</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>stoner rock</tag>
+      <tag>alternative</tag>
+      <tag>blues rock</tag>
+      <tag>rock</tag>
+      <tag>dutch</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>2019582</id>
+  <title>De Staat</title>
+  <artists>
+    <artist>De Staat</artist>
+    <headliner>De Staat</headliner>
+  </artists>
+    <venue>
+    <id>8782720</id>
+    <name>Musikbunker</name>
+    <location>
+      <city>Aachen</city>
+      <country>Germany</country>
+      <street>Goffartstraße 26</street>
+      <postalcode>52066</postalcode>
+      <geo:point>
+         <geo:lat>50.76692</geo:lat>
+         <geo:long>6.10378</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8782720+Musikbunker</url>
+    <website>http://www.musikbunker-aachen.de</website>
+    <phonenumber>+49-(0)241-532180</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/42823897.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/42823897.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/42823897.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/42823897.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/42823897/Musikbunker+Hochbunker_Goffartstrasse_013.jpg</image>
+  </venue>    <startDate>Sun, 20 Nov 2011 20:00:00</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/16449437.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/16449437.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/16449437.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/16449437.jpg</image>
+  <attendance>4</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=2019582</tag>    
+  <url>http://www.last.fm/event/2019582+De+Staat+at+Musikbunker+on+20+November+2011</url>
+  <website>http://www.musikbunker-aachen.de/musikbunker/de/pages/veranstaltungen/konzerte.php</website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>stoner rock</tag>
+      <tag>blues rock</tag>
+      <tag>alternative</tag>
+      <tag>rock</tag>
+      <tag>dutch</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>1969634</id>
+  <title>De Staat</title>
+  <artists>
+    <artist>De Staat</artist>
+    <artist>Wallace Vanborn</artist>
+    <headliner>De Staat</headliner>
+  </artists>
+    <venue>
+    <id>8778485</id>
+    <name>Vera</name>
+    <location>
+      <city>Groningen</city>
+      <country>Netherlands</country>
+      <street>Oosterstraat 44</street>
+      <postalcode>9711 NV</postalcode>
+      <geo:point>
+         <geo:lat>53.217025</geo:lat>
+         <geo:long>6.570039</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8778485+Vera</url>
+    <website>http://www.vera-groningen.nl</website>
+    <phonenumber>+31(0)50 3134681</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/237247.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/237247.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/237247.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/237247.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/500/237247/Vera.jpg</image>
+  </venue>    <startDate>Wed, 23 Nov 2011 12:32:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/16449437.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/16449437.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/16449437.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/16449437.jpg</image>
+  <attendance>16</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=1969634</tag>    
+  <url>http://www.last.fm/event/1969634+De+Staat+at+Vera+on+23+November+2011</url>
+  <website>http://www.vera-groningen.nl/agenda/mainstage/de-staat-support-0</website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>stoner rock</tag>
+      <tag>rock</tag>
+      <tag>garage rock</tag>
+      <tag>dutch</tag>
+      <tag>blues rock</tag>
+      <tag>alternative rock</tag>
+      <tag>alternative</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>1969631</id>
+  <title>De Staat</title>
+  <artists>
+    <artist>De Staat</artist>
+    <artist>Wallace Vanborn</artist>
+    <headliner>De Staat</headliner>
+  </artists>
+    <venue>
+    <id>8778485</id>
+    <name>Vera</name>
+    <location>
+      <city>Groningen</city>
+      <country>Netherlands</country>
+      <street>Oosterstraat 44</street>
+      <postalcode>9711 NV</postalcode>
+      <geo:point>
+         <geo:lat>53.217025</geo:lat>
+         <geo:long>6.570039</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8778485+Vera</url>
+    <website>http://www.vera-groningen.nl</website>
+    <phonenumber>+31(0)50 3134681</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/237247.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/237247.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/237247.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/237247.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/500/237247/Vera.jpg</image>
+  </venue>    <startDate>Thu, 24 Nov 2011 12:31:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/16449437.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/16449437.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/16449437.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/16449437.jpg</image>
+  <attendance>15</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=1969631</tag>    
+  <url>http://www.last.fm/event/1969631+De+Staat+at+Vera+on+24+November+2011</url>
+  <website>http://www.vera-groningen.nl/agenda/mainstage/de-staat-support-1</website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>stoner rock</tag>
+      <tag>rock</tag>
+      <tag>garage rock</tag>
+      <tag>dutch</tag>
+      <tag>blues rock</tag>
+      <tag>alternative rock</tag>
+      <tag>alternative</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>1963513</id>
+  <title>De Staat</title>
+  <artists>
+    <artist>De Staat</artist>
+    <headliner>De Staat</headliner>
+  </artists>
+    <venue>
+    <id>8779819</id>
+    <name>Paard van Troje</name>
+    <location>
+      <city>Den Haag</city>
+      <country>Netherlands</country>
+      <street>Prinsegracht 12</street>
+      <postalcode>2512 GA</postalcode>
+      <geo:point>
+         <geo:lat>52.07474</geo:lat>
+         <geo:long>4.307629</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8779819+Paard+van+Troje</url>
+    <website>http://www.paard.nl</website>
+    <phonenumber>+31 (0)70 7503434</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/53575783.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/53575783.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/53575783.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/53575783.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/500/53575783/Paard+van+Troje++logo.jpg</image>
+  </venue>    <startDate>Fri, 25 Nov 2011 10:11:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/16449437.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/16449437.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/16449437.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/16449437.jpg</image>
+  <attendance>17</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=1963513</tag>    
+  <url>http://www.last.fm/event/1963513+De+Staat</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>stoner rock</tag>
+      <tag>alternative</tag>
+      <tag>blues rock</tag>
+      <tag>rock</tag>
+      <tag>dutch</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>1962282</id>
+  <title>De Staat</title>
+  <artists>
+    <artist>De Staat</artist>
+    <headliner>De Staat</headliner>
+  </artists>
+    <venue>
+    <id>8782802</id>
+    <name>Bibelot</name>
+    <location>
+      <city>Dordrecht</city>
+      <country>Netherlands</country>
+      <street>Wijnstraat 117</street>
+      <postalcode>3311 BT</postalcode>
+      <geo:point>
+         <geo:lat>51.817807</geo:lat>
+         <geo:long>4.668413</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8782802+Bibelot</url>
+    <website>http://www.bibelot.net</website>
+    <phonenumber></phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/279621.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/279621.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/279621.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/279621.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/279621/Bibelot.jpg</image>
+  </venue>    <startDate>Sat, 26 Nov 2011 20:30:00</startDate>
+  <description><![CDATA[<div class="bbcode">Doors open at 20:00<br />Concert starts at 20:45<br />Tickets € 18 (at the door € 18,50)</div>]]></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/16449437.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/16449437.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/16449437.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/16449437.jpg</image>
+  <attendance>11</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=1962282</tag>    
+  <url>http://www.last.fm/event/1962282+De+Staat+at+Bibelot+on+26+November+2011</url>
+  <website>http://www.bibelot.net/ProgrammaDetail.aspx?id=1255</website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>stoner rock</tag>
+      <tag>alternative</tag>
+      <tag>blues rock</tag>
+      <tag>rock</tag>
+      <tag>dutch</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>1963516</id>
+  <title>De Staat</title>
+  <artists>
+    <artist>De Staat</artist>
+    <artist>Wallace Vanborn</artist>
+    <headliner>De Staat</headliner>
+  </artists>
+    <venue>
+    <id>8915848</id>
+    <name>Luxor Live</name>
+    <location>
+      <city>Arnhem</city>
+      <country>Netherlands</country>
+      <street>Willemsplein 10</street>
+      <postalcode>6811KB</postalcode>
+      <geo:point>
+         <geo:lat>51.983466</geo:lat>
+         <geo:long>5.903867</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8915848+Luxor+Live</url>
+    <website>http://www.luxorlive.nl</website>
+    <phonenumber>+31-(0)26-3511660</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/5127389.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/5127389.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/5127389.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/5127389.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/5127389/Luxor+Live.jpg</image>
+  </venue>    <startDate>Thu, 01 Dec 2011 20:30:00</startDate>
+  <description><![CDATA[<div class="bbcode">Het begon als het afstudeerproject van Torre Florim en was binnen de kortste keren een volledige band. De Staat, opgericht in 2007, is vernoemd naar een compositie van Louis Andriessen. Dat zegt al iets over de onvoorspelbaarheid van de muziek, een kruising tussen de rauwe garagerock van Jack White's Dead Weather en de minimalistische soundscapes van Steve Reich. Dat wringt en dat knarst en dat is goed, want van Glastonbury tot Sziget overtuigde De Staat met hun muziek en energieke podiumpresentatie, lang voor debuutalbum Wait for evolution in 2010 verscheen. Dat kreeg met het veelgeprezen Machinery in maart 2011 zijn opvolger. Begon het eerste album nog als soloproject, het tweede was van meet af echt van de band, die nu klinkt als een geoliede machine. Bezoekers van Eric Cortons twitterfeest op 23 november 2010 in Luxor Live kregen alvast een voorproefje, nu is de tijd voor het echte werk</div>]]></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/16449437.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/16449437.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/16449437.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/16449437.jpg</image>
+  <attendance>20</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=1963516</tag>    
+  <url>http://www.last.fm/event/1963516+De+Staat</url>
+  <website>http://www.luxorlive.nl/programma/overzicht/$id_4621/</website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>stoner rock</tag>
+      <tag>rock</tag>
+      <tag>garage rock</tag>
+      <tag>dutch</tag>
+      <tag>blues rock</tag>
+      <tag>alternative rock</tag>
+      <tag>alternative</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>1963517</id>
+  <title>De Staat</title>
+  <artists>
+    <artist>De Staat</artist>
+    <headliner>De Staat</headliner>
+  </artists>
+    <venue>
+    <id>8778895</id>
+    <name>Patronaat</name>
+    <location>
+      <city>Haarlem</city>
+      <country>Netherlands</country>
+      <street>Zijlsingel 2</street>
+      <postalcode>2013 DN</postalcode>
+      <geo:point>
+         <geo:lat>52.383507</geo:lat>
+         <geo:long>4.629258</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8778895+Patronaat</url>
+    <website>http://www.patronaat.nl</website>
+    <phonenumber>+31-(0)23-5175858</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/430972.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/430972.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/430972.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/430972.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/500/430972/Patronaat.jpg</image>
+  </venue>    <startDate>Fri, 02 Dec 2011 10:15:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/16449437.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/16449437.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/16449437.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/16449437.jpg</image>
+  <attendance>15</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=1963517</tag>    
+  <url>http://www.last.fm/event/1963517+De+Staat</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>stoner rock</tag>
+      <tag>alternative</tag>
+      <tag>blues rock</tag>
+      <tag>rock</tag>
+      <tag>dutch</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>2058202</id>
+  <title>De Staat</title>
+  <artists>
+    <artist>De Staat</artist>
+    <artist>Automatic Sam</artist>
+    <headliner>De Staat</headliner>
+  </artists>
+    <venue>
+    <id>8778895</id>
+    <name>Patronaat</name>
+    <location>
+      <city>Haarlem</city>
+      <country>Netherlands</country>
+      <street>Zijlsingel 2</street>
+      <postalcode>2013 DN</postalcode>
+      <geo:point>
+         <geo:lat>52.383507</geo:lat>
+         <geo:long>4.629258</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8778895+Patronaat</url>
+    <website>http://www.patronaat.nl</website>
+    <phonenumber>+31-(0)23-5175858</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/430972.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/430972.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/430972.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/430972.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/500/430972/Patronaat.jpg</image>
+  </venue>    <startDate>Fri, 02 Dec 2011 20:00:00</startDate>
+  <description><![CDATA[<div class="bbcode">Met De Staat heeft Nederland er de laatste jaren een sterke rockband bij gekregen. Begin 2011 kwam het tweede album 'Machinery' uit en daarmee liet de band horen nog nooit van het 'lastige-tweede-plaat-syndroom' te hebben gehoord. Ronkend en stomend beukt deze goedgeöliede machine door met bluesy rock riffs. Hier en daar wordt zelfs eens experiment met funk en elektronica gedaan, maar het blijft vooral ontzettend rocken. En als Nick Cave en Tom Waits dan ook nog muzikaal worden aangehaald kan dit niet meer stuk. Volgens de serieuzere muziekpers in binnen- en buitenland is hier sprake van de plaat van het jaar, dus mis dit niet live!</div>]]></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/16449437.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/16449437.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/16449437.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/16449437.jpg</image>
+  <attendance>1</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=2058202</tag>    
+  <url>http://www.last.fm/event/2058202+De+Staat+at+Patronaat+on+2+December+2011</url>
+  <website>http://www.patronaat.nl/2-12-2011/de-staat</website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>rock</tag>
+      <tag>dutch</tag>
+      <tag>stoner rock</tag>
+      <tag>alternative</tag>
+      <tag>blues rock</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>1963519</id>
+  <title>De Staat</title>
+  <artists>
+    <artist>De Staat</artist>
+    <headliner>De Staat</headliner>
+  </artists>
+    <venue>
+    <id>8936767</id>
+    <name>Limburgzaal</name>
+    <location>
+      <city>Heerlen</city>
+      <country>Netherlands</country>
+      <street></street>
+      <postalcode></postalcode>
+      <geo:point>
+         <geo:lat>50.951729</geo:lat>
+         <geo:long>5.872755</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8936767+Limburgzaal</url>
+    <website></website>
+    <phonenumber></phonenumber>
+    <image size="small"></image>
+	<image size="medium"></image>
+	<image size="large"></image>
+	<image size="extralarge"></image>
+	<image size="mega"></image>
+  </venue>    <startDate>Sat, 03 Dec 2011 10:16:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/16449437.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/16449437.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/16449437.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/16449437.jpg</image>
+  <attendance>9</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=1963519</tag>    
+  <url>http://www.last.fm/event/1963519+De+Staat</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>stoner rock</tag>
+      <tag>alternative</tag>
+      <tag>blues rock</tag>
+      <tag>rock</tag>
+      <tag>dutch</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>1963522</id>
+  <title>De Staat</title>
+  <artists>
+    <artist>De Staat</artist>
+    <headliner>De Staat</headliner>
+  </artists>
+    <venue>
+    <id>9195872</id>
+    <name>Dru Cultuurfabriek Popzaal</name>
+    <location>
+      <city>Ulft</city>
+      <country>Netherlands</country>
+      <street></street>
+      <postalcode></postalcode>
+      <geo:point>
+         <geo:lat>51.895614</geo:lat>
+         <geo:long>6.382258</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/9195872+Dru+Cultuurfabriek+Popzaal</url>
+    <website></website>
+    <phonenumber></phonenumber>
+    <image size="small"></image>
+	<image size="medium"></image>
+	<image size="large"></image>
+	<image size="extralarge"></image>
+	<image size="mega"></image>
+  </venue>    <startDate>Sun, 04 Dec 2011 10:19:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/16449437.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/16449437.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/16449437.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/16449437.jpg</image>
+  <attendance>2</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=1963522</tag>    
+  <url>http://www.last.fm/event/1963522+De+Staat</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>stoner rock</tag>
+      <tag>alternative</tag>
+      <tag>blues rock</tag>
+      <tag>rock</tag>
+      <tag>dutch</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>1963524</id>
+  <title>De Staat</title>
+  <artists>
+    <artist>De Staat</artist>
+    <artist>Wallace Vanborn</artist>
+    <headliner>De Staat</headliner>
+  </artists>
+    <venue>
+    <id>8780742</id>
+    <name>Mezz</name>
+    <location>
+      <city>Breda</city>
+      <country>Netherlands</country>
+      <street>Keizerstraat 101</street>
+      <postalcode>4811 HL</postalcode>
+      <geo:point>
+         <geo:lat>51.584124</geo:lat>
+         <geo:long>4.778627</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8780742+Mezz</url>
+    <website>http://www.mezz.nl</website>
+    <phonenumber>+31-(0)76-5156677</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/2177201.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/2177201.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/2177201.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/2177201.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/500/2177201/Mezz.jpg</image>
+  </venue>    <startDate>Thu, 08 Dec 2011 10:20:01</startDate>
+  <description><![CDATA[<div class="bbcode">De Staat is een band met een glasheldere, eigenzinnige visie op muziek. Met Machinery op zak komt De Staat naar Mezz om te laten zien hoe een krachtige geoliede machine hoort te klinken.<br /><br />Dommelsch zaal/ 20.00/ toegang €18</div>]]></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/16449437.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/16449437.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/16449437.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/16449437.jpg</image>
+  <attendance>26</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=1963524</tag>    
+  <url>http://www.last.fm/event/1963524+De+Staat</url>
+  <website>http://www.mezz.nl/ProgrammaDetail.aspx?ProgrammaID=25489</website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>stoner rock</tag>
+      <tag>rock</tag>
+      <tag>garage rock</tag>
+      <tag>dutch</tag>
+      <tag>blues rock</tag>
+      <tag>alternative rock</tag>
+      <tag>alternative</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>1965090</id>
+  <title>De Staat</title>
+  <artists>
+    <artist>De Staat</artist>
+    <artist>The Sore Losers</artist>
+    <headliner>De Staat</headliner>
+  </artists>
+    <venue>
+    <id>8778770</id>
+    <name>Burgerweeshuis</name>
+    <location>
+      <city>Deventer</city>
+      <country>Netherlands</country>
+      <street>Bagijnenstraat 9</street>
+      <postalcode>7411 PT</postalcode>
+      <geo:point>
+         <geo:lat>52.254341</geo:lat>
+         <geo:long>6.155862</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8778770+Burgerweeshuis</url>
+    <website>http://www.burgerweeshuis.nl</website>
+    <phonenumber>+31-(0)570-619198</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/574465.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/574465.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/574465.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/574465.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/574465/Burgerweeshuis.jpg</image>
+  </venue>    <startDate>Fri, 09 Dec 2011 21:00:00</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/16449437.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/16449437.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/16449437.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/16449437.jpg</image>
+  <attendance>12</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=1965090</tag>    
+  <url>http://www.last.fm/event/1965090+De+Staat+at+Burgerweeshuis+on+9+December+2011</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>alternative</tag>
+      <tag>rock</tag>
+      <tag>belgium</tag>
+      <tag>dutch</tag>
+      <tag>punk</tag>
+      <tag>blues rock</tag>
+      <tag>belgian</tag>
+      <tag>stoner rock</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>1963492</id>
+  <title>De Staat</title>
+  <artists>
+    <artist>De Staat</artist>
+    <artist>Black Bottle Riot</artist>
+    <headliner>De Staat</headliner>
+  </artists>
+    <venue>
+    <id>9218623</id>
+    <name>W2 Poppodium</name>
+    <location>
+      <city>'s-Hertogenbosch (Den Bosch)</city>
+      <country>Netherlands</country>
+      <street>Boschdijkstraat 100</street>
+      <postalcode>5211</postalcode>
+      <geo:point>
+         <geo:lat>51.695562</geo:lat>
+         <geo:long>5.297087</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/9218623+W2+Poppodium</url>
+    <website>http://www.w2.nl/</website>
+    <phonenumber>+31(0)73-6123422</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/69330212.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/69330212.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/69330212.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/69330212.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/69330212/W2+Poppodium+w21.jpg</image>
+  </venue>    <startDate>Thu, 15 Dec 2011 09:42:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/16449437.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/16449437.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/16449437.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/16449437.jpg</image>
+  <attendance>15</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=1963492</tag>    
+  <url>http://www.last.fm/event/1963492+De+Staat</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>rock</tag>
+      <tag>blues rock</tag>
+      <tag>stoner rock</tag>
+      <tag>alternative</tag>
+      <tag>dutch</tag>
+      <tag>hard rock</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>1968993</id>
+  <title>De Staat</title>
+  <artists>
+    <artist>De Staat</artist>
+    <artist>Black Bottle Riot</artist>
+    <headliner>De Staat</headliner>
+  </artists>
+    <venue>
+    <id>8873700</id>
+    <name>Muziekcentrum Schaaf</name>
+    <location>
+      <city>Leeuwarden</city>
+      <country>Netherlands</country>
+      <street>Breedstraat 48</street>
+      <postalcode>8911 GJ</postalcode>
+      <geo:point>
+         <geo:lat>53.204118</geo:lat>
+         <geo:long>5.798927</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8873700+Muziekcentrum+Schaaf</url>
+    <website>www.muziekcentrumschaaf.nl</website>
+    <phonenumber>058-2158003</phonenumber>
+    <image size="small"></image>
+	<image size="medium"></image>
+	<image size="large"></image>
+	<image size="extralarge"></image>
+	<image size="mega"></image>
+  </venue>    <startDate>Fri, 16 Dec 2011 20:00:00</startDate>
+  <description><![CDATA[<div class="bbcode">DE STAAT<br />Vrijdag 16 december 2011 om 20:00<br /><br />De Staat &amp; Black Bottle Riot<br />Vrijdag 16 december 2011 <br />Schaaf City Theater <br />Zaal open : 20.00 uur<br />Entree: € 17,50 excl. Servicekosten<br /><br />Er zijn weinig Nederlandse groepen die kunnen zeggen dat  ze in de aanloopfase van hun carrière 2 keer op Pinkpop hebben gestaan. De Staat kan dat wel. Met het jongste,  tweede, album &quot;Machinery&quot;  op zak sinds afgelopen voorjaar,  hebben  ze een spoor van lovende recensies achter zich gelaten die er niet om liegen. En de potentie van de groep reikt verder dan onze landsgrenzen want ook vanuit 't buitenland is er volop belangstelling voor de formatie met frontman en aanjager Torre Florim.  De crossover rock&amp;soul  van De Staat is eigentijds en zal deze avond ook Schaaf probleemloos weten in te pakken.<br /><br />De kaartverkoop start a.s Zaterdag 11 juni<br /><br />Voorverkoop via onderstaande link :  <br /> <br /><a href="https://dashboard.ticketscript.com/channel/web/get-dates/rid/HA9DXPYZ/eid/106551/language/nl" rel="nofollow">https://dashboard.ticketscript.com/channel/web/get-dates/rid/HA9DXPYZ/eid/106551/language/nl</a> <br /> <br />Voorverkoopadressen :<br /> <br />VVV kantoor Leeuwarden<br />King Kong Records</div>]]></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/16449437.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/16449437.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/16449437.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/16449437.jpg</image>
+  <attendance>19</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=1968993</tag>    
+  <url>http://www.last.fm/event/1968993+De+Staat</url>
+  <website>http://www.muziekcentrumschaaf.nl/agendaitem.aspx?a=31354</website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>rock</tag>
+      <tag>blues rock</tag>
+      <tag>stoner rock</tag>
+      <tag>alternative</tag>
+      <tag>dutch</tag>
+      <tag>hard rock</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>1998995</id>
+  <title>De Staat</title>
+  <artists>
+    <artist>De Staat</artist>
+    <artist>Black Bottle Riot</artist>
+    <headliner>De Staat</headliner>
+  </artists>
+    <venue>
+    <id>8780316</id>
+    <name>Metropool</name>
+    <location>
+      <city>Hengelo</city>
+      <country>Netherlands</country>
+      <street>Industrieplein 10</street>
+      <postalcode>7553LL</postalcode>
+      <geo:point>
+         <geo:lat>52.261447</geo:lat>
+         <geo:long>6.792124</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8780316+Metropool</url>
+    <website>http://www.metropool.nl</website>
+    <phonenumber>+31 (0)74 24 38 000</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/420802.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/420802.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/420802.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/420802.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/420802/Metropool.jpg</image>
+  </venue>    <startDate>Sat, 17 Dec 2011 19:30:00</startDate>
+  <description><![CDATA[<div class="bbcode">Na een zomer gevuld met optredens op de leukste festivals waaronder Pinkpop en De Zwarte Cross, is het tijd voor een najaarstour. De heren van De Staat zullen ook Metropool laten rocken met hun nieuwste nummers afkomstig van het album Machinery. Met het bruut rockende Black Bottle Riot - eveneens uit Nijmegen, momenteel rockcity nummer één van NL - als support zal het zweet deze avond van de muren druipen.<br /><br />Recensie optreden De Staat in Hedon Zwolle:<br />Tijdens het laatste nummer wordt er hevig bewogen door het publiek. Iedereen wil nog meer zien en horen van deze geweldige band met een zo’n unieke sound. Maar dan loopt het nummer toch echt tot zijn eind en is het optreden afgelopen. De Staat neemt afscheid van Zwolle en ze verlaten het podium. Moe, bezweet, maar voldaan verlaat het publiek Hedon - Linda Geerlings  Bron:3voor12.nl/overijssel</div>]]></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/16449437.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/16449437.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/16449437.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/16449437.jpg</image>
+  <attendance>5</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=1998995</tag>    
+  <url>http://www.last.fm/event/1998995+De+Staat+at+Metropool+on+17+December+2011</url>
+  <website>http://www.metropool.nl/agenda.asp?EvenementID=639&amp;maand=12&amp;jaar=2011&amp;dag=17</website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>rock</tag>
+      <tag>blues rock</tag>
+      <tag>stoner rock</tag>
+      <tag>alternative</tag>
+      <tag>dutch</tag>
+      <tag>hard rock</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>1962283</id>
+  <title>De Staat</title>
+  <artists>
+    <artist>De Staat</artist>
+    <headliner>De Staat</headliner>
+  </artists>
+    <venue>
+    <id>8778456</id>
+    <name>Paradiso</name>
+    <location>
+      <city>Amsterdam</city>
+      <country>Netherlands</country>
+      <street>Weteringschans 6-8</street>
+      <postalcode>1017 SG</postalcode>
+      <geo:point>
+         <geo:lat>52.362287</geo:lat>
+         <geo:long>4.883965</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8778456+Paradiso</url>
+    <website>http://www.paradiso.nl</website>
+    <phonenumber>+31-(0)20-6264521</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/405754.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/405754.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/405754.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/405754.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/405754/Paradiso.jpg</image>
+  </venue>    <startDate>Sun, 18 Dec 2011 10:41:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/16449437.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/16449437.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/16449437.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/16449437.jpg</image>
+  <attendance>34</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=1962283</tag>    
+  <url>http://www.last.fm/event/1962283+De+Staat</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>stoner rock</tag>
+      <tag>alternative</tag>
+      <tag>blues rock</tag>
+      <tag>rock</tag>
+      <tag>dutch</tag>
+    </tags>
+    </event></events></lfm>

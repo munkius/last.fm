@@ -1,5 +1,6 @@
 source "http://rubygems.org"
 
+gem 'hashie'
 gem 'nokogiri'
 
 group :test do

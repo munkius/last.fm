@@ -6,7 +6,7 @@ module LastFM
     include RequestHelper
     include Unimplemented
     
-    unimplemented methods: [:add_tags, :correction, :events, :images, :info, :past_events, :podcast, :similar,
+    unimplemented methods: [:add_tags, :correction, :images, :info, :past_events, :podcast, :similar,
                      :user_tags, :top_albums, :top_fans, :top_tags, :remove_tag, :share, :shout]
 
     attr_reader :name, :listeners, :images, :url, :streamable, :similar_artists, :tags
@@ -84,6 +84,18 @@ module LastFM
       end
       
       top_tracks
+    end
+    
+    def events
+      xml = do_request(method: "artist.getevents", artist: @name, autocorrect: 1)
+      xml.remove_namespaces!
+      # puts xml.to_xml(:indent => 2)
+      events = []
+      xml.xpath("//event").each do |e|
+        events << Event.from_xml(e)
+      end
+      
+      events
     end
     
     Track = Struct::new(:rank, :name, :duration, :playcount, :listeners, :url, :streamable, :images)
