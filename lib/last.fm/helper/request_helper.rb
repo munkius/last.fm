@@ -27,7 +27,8 @@ module LastFM
       def do_request(params)
         url = BASE_URL + params.map{|k,v| "&#{k}=#{v}" }.join
         url = URI::escape(url)
-        xml = Nokogiri::XML(open(url))
+        response = open(url) rescue nil
+        xml = Nokogiri::XML(response)
       end
       
       def find_stuff(method, options={}, xpath, clazz, &block)

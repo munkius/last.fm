@@ -28,7 +28,7 @@ describe LastFM::User do
     end
     
     it "should return nil when a user does not exist" do
-      stub_user_response(method: "user.getinfo", user: "non-existent-user")
+      stub_user_response({method: "user.getinfo", user: "non-existent-user"}, {status: 400})
       LastFM::User.find("non-existent-user").should be_nil
     end
     

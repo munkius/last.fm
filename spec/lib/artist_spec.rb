@@ -105,7 +105,7 @@ describe LastFM::Artist do
     end
     
     it "should return nil when an artist does not exist" do
-      stub_artist_response(method: "artist.getinfo", artist: "non-existent-artist", autocorrect: 1)
+      stub_artist_response({method: "artist.getinfo", artist: "non-existent-artist", autocorrect: 1}, {status: 400})
       LastFM::Artist.find("non-existent-artist").should be_nil
     end
     
