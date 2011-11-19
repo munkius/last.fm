@@ -1,4 +1,5 @@
 require 'nokogiri'
+require 'net/http'
 require 'open-uri'
 
 module LastFM
@@ -9,8 +10,6 @@ module LastFM
       base.extend ClassMethods
     end
 
-    BASE_URL = "http://ws.audioscrobbler.com/2.0/?api_key=b25b959554ed76058ac220b7b2e0a026"
-    
     def do_request(params)
       self.class.do_request(params)
     end
@@ -25,10 +24,16 @@ module LastFM
     
     module ClassMethods
       def do_request(params)
-        url = BASE_URL + params.map{|k,v| "&#{k}=#{v}" }.join
-        url = URI::escape(url)
-        response = open(url) rescue nil
-        xml = Nokogiri::XML(response)
+        url = LastFM.base_url + params.map{|k,v| "&#{k}=#{v}" }.join
+        url = URI(URI::escape(url))
+        
+        response = Net::HTTP.get_response(url)
+        
+        if response.is_a? Net::HTTPSuccess
+          Nokogiri::XML(response.body)
+        else
+          handle_error(response) if response != Net::HTTPSuccess
+        end
       end
       
       def find_stuff(method, options={}, xpath, clazz, &block)
@@ -47,6 +52,19 @@ module LastFM
       
       def find_single(method, options={}, xpath, clazz, &block)
         find_stuff(method, options, xpath, clazz, &block).first
+      end
+      
+    private
+    
+      def handle_error(response)
+        xml = Nokogiri::XML(response.body)
+        error_code = xml.at("/lfm/error").attributes["code"].value.to_i
+        
+        if error_code == 10
+          raise InvalidApiKey
+        end
+        
+        xml
       end
     end
   end
