@@ -159,11 +159,11 @@ describe LastFM::Artist do
       events.size.should == 19
       event = events.first
 
-      event.id.should == 3110217
+      event.id.should == "3110217"
       event.title.should == "De Staat"
       event.headliner.should == "De Staat"
       event.artists.should == ["De Staat", "Ulysses Storm"]
-      event.venue.id.should == 8777933
+      event.venue.id.should == "8777933"
       event.venue.name.should == "Old Blue Last"
       event.venue.location.city.should == "London"
       event.venue.location.country.should == "United Kingdom"

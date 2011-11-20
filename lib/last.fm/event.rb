@@ -5,12 +5,12 @@ module LastFM
       
       def from_xml(xml)
         event = Event.new
-        event.id = xml.at("./id").content.to_i
+        event.id = xml.at("./id").content
         event.title = xml.at("./title").content
         event.artists = xml.xpath("./artists/artist").map{|a| a.content}
         event.headliner = xml.at("./artists/headliner").content
         event.venue = Hashie::Mash.new
-        event.venue.id = xml.at("./venue/id").content.to_i
+        event.venue.id = xml.at("./venue/id").content
         event.venue.name = xml.at("./venue/name").content
         event.venue.location = Hashie::Mash.new
         event.venue.location.city = xml.at("./venue/location/city").content
