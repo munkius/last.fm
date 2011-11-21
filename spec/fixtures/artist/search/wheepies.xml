@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+<results for="wheepies" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">
+<opensearch:Query role="request" searchTerms="wheepies" startPage="1" />
+<opensearch:totalResults>1</opensearch:totalResults>
+<opensearch:startIndex>0</opensearch:startIndex>
+<opensearch:itemsPerPage>30</opensearch:itemsPerPage><artistmatches>
+<artist>
+    <name>Wheepies</name>
+            <mbid></mbid>
+                    <url>http://www.last.fm/music/Wheepies</url>
+    <streamable>0</streamable>
+            <image size="small"></image>
+        <image size="medium"></image>
+        <image size="large"></image>
+        <image size="extralarge"></image>
+        <image size="mega"></image>
+    </artist></artistmatches>
+</results></lfm>

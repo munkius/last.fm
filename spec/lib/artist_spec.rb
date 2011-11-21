@@ -52,6 +52,15 @@ describe LastFM::Artist do
       end
     end
     
+    describe "for artists with limited info" do
+      it "should find the wheepies" do
+        stub_artist_response(method: "artist.search", artist: "wheepies")
+        artists = LastFM::Artist.search('wheepies')
+        artists.size.should == 1
+        artists.first.name.should == "Wheepies"
+      end
+    end
+    
     pending "error handling"
     
     # 2 : Invalid service - This service does not exist

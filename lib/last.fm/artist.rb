@@ -36,7 +36,7 @@ module LastFM
 
       def search(artist)
         find_stuff("artist.search", {artist: artist}, "//artist", Artist) do |artist, options|
-          options[:listeners] = artist.at("./listeners").content.to_i
+          options[:listeners] = artist.at("./listeners").content.to_i rescue nil
         end
       end
     end
