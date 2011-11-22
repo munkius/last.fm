@@ -38,7 +38,7 @@ describe LastFM::Artist do
     
     describe "for artists with spaces and funny characters in their name" do
       it "should find mumford & sons" do
-        stub_artist_response(method: "artist.search", artist: "mumford & sons")
+        stub_artist_response(method: "artist.search", artist: 'mumford & sons')
         artists = LastFM::Artist.search('mumford & sons')
         artists.size.should == 30
         artists.first.name.should == "Mumford & Sons"

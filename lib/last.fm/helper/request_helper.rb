@@ -24,10 +24,8 @@ module LastFM
     
     module ClassMethods
       def do_request(params)
-        url = LastFM.base_url + params.map{|k,v| "&#{k}=#{v}" }.join
-        url = URI(URI::escape(url))
-        
-        response = Net::HTTP.get_response(url)
+        url = LastFM.base_url + params.map{|k,v| "&#{CGI::escape(k.to_s)}=#{CGI::escape(v.to_s)}" }.join
+        response = Net::HTTP.get_response(URI(url))
         
         if response.is_a? Net::HTTPSuccess
           Nokogiri::XML(response.body)
