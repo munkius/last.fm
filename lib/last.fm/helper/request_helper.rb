@@ -56,12 +56,15 @@ module LastFM
     
       def handle_error(response)
         xml = Nokogiri::XML(response.body)
-        error_code = xml.at("/lfm/error").attributes["code"].value.to_i
-        
-        if error_code == 10
-          raise InvalidApiKey
+        begin
+          error_code = xml.at("/lfm/error").attributes["code"].value.to_i
+          if error_code == 10
+            raise InvalidApiKey
+          end
+        rescue StandardError => e
+          puts response.body # for debug reasoning
+          raise e
         end
-        
         xml
       end
     end

@@ -12,7 +12,6 @@ module StubResponse
     fixture_path.gsub!(/ø/,"o")
     
     status = options[:status] || 200
-    puts [arguments.inspect, url]
     FakeWeb.register_uri(:get, url, :body => File.open(fixture_path, "rb").read, status: status)
   end
   
