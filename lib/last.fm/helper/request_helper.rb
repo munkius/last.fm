@@ -6,6 +6,8 @@ module LastFM
   module RequestHelper
     include Errors
     
+    MAX_RETRY_COUNT = 5
+    
     def self.included(base)
       base.extend ClassMethods
     end
@@ -27,10 +29,22 @@ module LastFM
         url = LastFM.base_url + params.map{|k,v| "&#{CGI::escape(k.to_s)}=#{CGI::escape(v.to_s)}" }.join
         response = Net::HTTP.get_response(URI(url))
         
-        if response.is_a? Net::HTTPSuccess
-          Nokogiri::XML(response.body)
-        else
-          handle_error(response) if response != Net::HTTPSuccess
+        begin
+          if response.is_a? Net::HTTPSuccess
+            return Nokogiri::XML(response.body)
+          elsif response.is_a? Net::HTTPClientError
+            handle_error(response)
+          elsif response.is_a? Net::HTTPServerError
+            raise "Internal server error at Last.FM (#{url})", response
+          end
+        rescue StandardError => e
+          retry_count ||= 0; retry_count += 1
+          if retry_count <= MAX_RETRY_COUNT
+            sleep 1
+            retry
+          else
+            raise e
+          end
         end
       end
       
@@ -62,7 +76,7 @@ module LastFM
             raise InvalidApiKey
           end
         rescue StandardError => e
-          puts response.body # for debug reasoning
+          STDERR.puts response.body # for debug reasoning
           raise e
         end
         xml

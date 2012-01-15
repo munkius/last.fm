@@ -7,4 +7,5 @@ group :test do
   gem 'fakeweb'
   gem 'mocha'
   gem 'rspec'
+  gem 'rspec-instafail'
 end
