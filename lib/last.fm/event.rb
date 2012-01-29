@@ -1,5 +1,6 @@
 module LastFM
   class Event < Hashie::Mash
+    include RequestHelper
     
     class << self
       
@@ -38,6 +39,11 @@ module LastFM
         
         event
       end
+      
+      def find(id)
+        find_single("event.getinfo", {event: id}, "/lfm/event", Event)
+      end
+      
     end
   end
 end

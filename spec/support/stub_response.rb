@@ -14,6 +14,16 @@ module StubResponse
     status = options[:status] || 200
     FakeWeb.register_uri(:get, url, :body => File.open(fixture_path, "rb").read, status: status)
   end
+
+  def stub_event_response(arguments, options = {})
+    url = LastFM.base_url + arguments.map{|k,v| "&#{CGI::escape(k.to_s)}=#{CGI::escape(v.to_s)}"}.join
+    sub_fixtures_path = arguments[:method].sub(/\./, "/")
+    fixture_path = "../../fixtures/#{sub_fixtures_path}/#{arguments[:event]}"
+    fixture_path = File.expand_path("#{fixture_path}.xml", __FILE__)
+    
+    status = options[:status] || 200
+    FakeWeb.register_uri(:get, url, :body => File.open(fixture_path, "rb").read, status: status)
+  end
   
   def stub_user_response(arguments, options = {})
     url = LastFM.base_url + arguments.map{|k,v| "&#{CGI::escape(k.to_s)}=#{CGI::escape(v.to_s)}"}.join
