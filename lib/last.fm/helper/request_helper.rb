@@ -35,7 +35,7 @@ module LastFM
           elsif response.is_a? Net::HTTPClientError
             handle_error(response)
           elsif response.is_a? Net::HTTPServerError
-            raise "Internal server error at Last.FM (#{url})", response
+            raise LastFM::ConnectionError.new("Internal server error at Last.FM (#{url})", response)
           end
         rescue StandardError => e
           retry_count ||= 0; retry_count += 1
