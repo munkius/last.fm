@@ -6,7 +6,7 @@ module LastFM
     AUTHENTICATED_METHODS = [:add_tags, :tags_by_user, :remove_tag, :share, :shout]
     unimplemented methods: AUTHENTICATED_METHODS + [:correction, :podcast]
 
-    attr_reader :name, :listeners, :images, :match, :url, :streamable, :similar_artists, :tags
+    attr_reader :name, :listeners, :mbid, :images, :match, :url, :streamable, :similar_artists, :tags
     alias_method :streamable?, :streamable
     
     class << self
@@ -18,6 +18,7 @@ module LastFM
         options[:images] = ImageReader::images(xml, "./image")
         options[:playcount] = xml.at("./playcount").content.to_i rescue nil
         options[:streamable] = xml.at("./streamable").content == "1"
+        options[:mbid] = xml.at("./mbid").content
         options[:url] = xml.at("./url").content
         
         yield(xml, options) if block_given?
@@ -90,8 +91,8 @@ module LastFM
     def initialize(name, options)
       options = options.dup
       @name = name
-      @images, @listeners, @match, @playcount, @similar_artists, @streamable, @tags, @url = 
-        options.delete(:images), options.delete(:listeners), options.delete(:match), options.delete(:playcount), options.delete(:similar_artists), options.delete(:streamable), options.delete(:tags), options.delete(:url)
+      @images, @listeners, @match, @playcount, @similar_artists, @streamable, @tags, @url, @mbid = 
+        options.delete(:images), options.delete(:listeners), options.delete(:match), options.delete(:playcount), options.delete(:similar_artists), options.delete(:streamable), options.delete(:tags), options.delete(:url), options.delete(:mbid)
         raise "Invalid options passed: #{options.keys.join(", ")}" if options.keys.size > 0
     end
     

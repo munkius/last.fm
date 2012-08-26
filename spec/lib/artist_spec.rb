@@ -86,6 +86,7 @@ describe LastFM::Artist do
       tool = LastFM::Artist.find("tool")
       tool.name.should == "Tool"
       tool.listeners.should == 1332090
+      tool.mbid.should == "66fc5bf8-daa4-4241-b378-9bc9077939d2"
       tool.url.should == "http://www.last.fm/music/Tool"
       tool.streamable?.should be_true
     
