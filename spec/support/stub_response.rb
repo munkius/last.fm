@@ -6,7 +6,7 @@ module StubResponse
     
     url = LastFM.base_url + arguments.map{|k,v| "&#{CGI::escape(k.to_s)}=#{CGI::escape(v.to_s)}"}.join
     sub_fixtures_path = arguments[:method].sub(/\./, "/")
-    fixture_path = "../../fixtures/#{sub_fixtures_path}/#{arguments[:artist]}"
+    fixture_path = "../../fixtures/#{sub_fixtures_path}/#{arguments[:artist] || arguments[:mbid]}"
     fixture_path = "#{fixture_path}-autocorrect" if autocorrect
     fixture_path = File.expand_path("#{fixture_path}.xml", __FILE__)
     fixture_path.gsub!(/ø/,"o")

@@ -81,9 +81,36 @@ describe LastFM::Artist do
 
   describe "find" do
     
-    it "should be found for Tool" do
+    it "should be found for Tool by mbid" do
+      stub_artist_response(method: "artist.getinfo", mbid: "666")
+      tool = LastFM::Artist.find_by_mbid("666")
+
+      tool.name.should == "Tool"
+      tool.listeners.should == 1332090
+      tool.mbid.should == "66fc5bf8-daa4-4241-b378-9bc9077939d2"
+      tool.url.should == "http://www.last.fm/music/Tool"
+      tool.streamable?.should be_true
+    
+      tool.images.size.should == 5
+      tool.images.small.should == "http://userserve-ak.last.fm/serve/34/3727739.jpg"
+      tool.images.medium.should == "http://userserve-ak.last.fm/serve/64/3727739.jpg"
+      tool.images.large.should == "http://userserve-ak.last.fm/serve/126/3727739.jpg"
+      tool.images.extralarge.should == "http://userserve-ak.last.fm/serve/252/3727739.jpg"
+      tool.images.mega.should == "http://userserve-ak.last.fm/serve/500/3727739/Tool+1199177781240.jpg"
+      
+      similar_artists = ["A Perfect Circle", "Puscifer", "Rishloo", "ASHES dIVIDE", "Nine Inch Nails"]
+
+      tool.similar_artists.size.should == similar_artists.size
+      similar_artists.each {|a| tool.similar_artists.should include(a)}
+      
+      tags = ["progressive metal", "progressive rock", "metal", "alternative", "rock"]
+      tool.tags.size.should == tags.size
+      tags.each{|t| tool.tags.should include(t)}
+    end
+    
+    it "should be found for Tool by name" do
       stub_artist_response(method: "artist.getinfo", artist: "tool", autocorrect: 1)
-      tool = LastFM::Artist.find("tool")
+      tool = LastFM::Artist.find_by_name("tool")
       tool.name.should == "Tool"
       tool.listeners.should == 1332090
       tool.mbid.should == "66fc5bf8-daa4-4241-b378-9bc9077939d2"
@@ -110,20 +137,15 @@ describe LastFM::Artist do
     it "should use autocorrection" do
       stub_artist_response(method: "artist.getinfo", artist: "blof")
       stub_artist_response(method: "artist.getinfo", artist: "blof", autocorrect: 1)
-      blof = LastFM::Artist.find("blof")
+      blof = LastFM::Artist.find_by_name("blof")
       blof.name.should == "Bløf"
     end
     
     it "should return nil when an artist does not exist" do
       stub_artist_response({method: "artist.getinfo", artist: "non-existent-artist", autocorrect: 1}, {status: 400})
-      LastFM::Artist.find("non-existent-artist").should be_nil
+      LastFM::Artist.find_by_name("non-existent-artist").should be_nil
     end
     
-    it "should alias find and info" do
-      stub_artist_response(method: "artist.getinfo", artist: "tool", autocorrect: 1)
-      LastFM::Artist.find("tool").name.should == LastFM::Artist.info("tool").name
-    end
-
   end
   
   describe "top tracks" do
@@ -131,7 +153,7 @@ describe LastFM::Artist do
     it "should be found for Tool" do
       stub_artist_response(method: "artist.getinfo", artist: "tool", autocorrect: 1)
       stub_artist_response(method: "artist.gettoptracks", artist: "Tool", autocorrect: 1)
-      top_tracks = LastFM::Artist.find("tool").find_top_tracks
+      top_tracks = LastFM::Artist.find_by_name("tool").find_top_tracks
       
       top_tracks.size.should == 50
       schism = top_tracks.first
@@ -153,7 +175,7 @@ describe LastFM::Artist do
       stub_artist_response(method: "artist.getinfo", artist: "blof", autocorrect: 1)
       stub_artist_response(method: "artist.gettoptracks", artist: "Bløf")
       stub_artist_response(method: "artist.gettoptracks", artist: "Bløf", autocorrect: 1)
-      top_tracks = LastFM::Artist.find("blof").find_top_tracks
+      top_tracks = LastFM::Artist.find_by_name("blof").find_top_tracks
       top_tracks.first.name.should == "Harder Dan Ik Hebben Kan"
     end
   end
@@ -163,7 +185,7 @@ describe LastFM::Artist do
     it "should be found for de staat" do
       stub_artist_response(method: "artist.getinfo", artist: "de staat", autocorrect: 1)
       stub_artist_response(method: "artist.getevents", artist: "De Staat", autocorrect: 1)
-      de_staat = LastFM::Artist.find("de staat")
+      de_staat = LastFM::Artist.find_by_name("de staat")
       events = de_staat.find_events
       
       events.size.should == 19
@@ -210,7 +232,7 @@ describe LastFM::Artist do
     before :each do
       stub_artist_response(method: "artist.getinfo", artist: "tool", autocorrect: 1)
       stub_artist_response(method: "artist.getsimilar", artist: "Tool")
-      @tool = LastFM::Artist.find("tool")
+      @tool = LastFM::Artist.find_by_name("tool")
     end
     
     it "should find similar artists" do
@@ -232,7 +254,7 @@ describe LastFM::Artist do
     before :each do
       stub_artist_response(method: "artist.getinfo", artist: "deftones", autocorrect: 1)
       stub_artist_response(method: "artist.getpastevents", artist: "Deftones")
-      @deftones = LastFM::Artist.find("deftones")
+      @deftones = LastFM::Artist.find_by_name("deftones")
     end
     
     it "should be found for Deftones" do
@@ -249,7 +271,7 @@ describe LastFM::Artist do
     before :each do
       stub_artist_response(method: "artist.getinfo", artist: "deftones", autocorrect: 1)
       stub_artist_response(method: "artist.gettopfans", artist: "Deftones")
-      @deftones = LastFM::Artist.find("deftones")
+      @deftones = LastFM::Artist.find_by_name("deftones")
     end
     
     it "should be found for Deftones" do
@@ -267,7 +289,7 @@ describe LastFM::Artist do
     before :each do
       stub_artist_response(method: "artist.getinfo", artist: "deftones", autocorrect: 1)
       stub_artist_response(method: "artist.gettopalbums", artist: "Deftones")
-      @deftones = LastFM::Artist.find("deftones")
+      @deftones = LastFM::Artist.find_by_name("deftones")
     end
     
     it "should be found for Deftones" do
@@ -289,7 +311,7 @@ describe LastFM::Artist do
     before :each do
       stub_artist_response(method: "artist.getinfo", artist: "deftones", autocorrect: 1)
       stub_artist_response(method: "artist.gettoptags", artist: "Deftones")
-      @deftones = LastFM::Artist.find("deftones")
+      @deftones = LastFM::Artist.find_by_name("deftones")
     end
     
     it "should be found for Deftones" do
@@ -305,7 +327,7 @@ describe LastFM::Artist do
     before :each do
       stub_artist_response(method: "artist.getinfo", artist: "deftones", autocorrect: 1)
       stub_artist_response(method: "artist.getimages", artist: "Deftones")
-      @deftones = LastFM::Artist.find("deftones")
+      @deftones = LastFM::Artist.find_by_name("deftones")
     end
     
     it "should be found for Deftones" do
@@ -330,7 +352,7 @@ describe LastFM::Artist do
     before :each do
       stub_artist_response(method: "artist.getinfo", artist: "deftones", autocorrect: 1)
       stub_artist_response(method: "artist.getshouts", artist: "Deftones")
-      @deftones = LastFM::Artist.find("deftones")
+      @deftones = LastFM::Artist.find_by_name("deftones")
     end
     
     it "should be found for Deftones" do

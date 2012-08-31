@@ -25,16 +25,22 @@ module LastFM
         Artist.new(name, options)
       end
 
-      def find(artist)
-        find_single("artist.getinfo", {artist: artist, autocorrect: 1}, "/lfm/artist", Artist) do |artist, options|
+      def find_by_name(name)
+        find(artist: name, autocorrect: 1)
+      end
+
+      def find_by_mbid(mbid)
+        find(mbid: mbid)
+      end
+      
+      def find(options={})
+        find_single("artist.getinfo", options, "/lfm/artist", Artist) do |artist, options|
           options[:listeners] = artist.at("./stats/listeners").content.to_i
           options[:similar_artists] = artist.xpath("//similar/artist").map{|a| a.at("./name").content}
           options[:tags] = artist.xpath("//tags/tag").map{|t| t.at("./name").content}
         end
       end
       
-      alias_method :info, :find
-
       def search(artist)
         find_stuff("artist.search", {artist: artist}, "//artist", Artist) do |artist, options|
           options[:listeners] = artist.at("./listeners").content.to_i rescue nil
